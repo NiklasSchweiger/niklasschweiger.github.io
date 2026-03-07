@@ -318,12 +318,10 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-socials
   jekyll-tabs
-  jekyll-terser!
+  jekyll-terser
   jekyll-toc
   jekyll-twitter-plugin
   jemoji
   observer
   ostruct
 
-BUNDLED WITH
-  2.4.22
