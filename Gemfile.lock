@@ -290,7 +290,7 @@ DEPENDENCIES
   jekyll-sitemap
   jekyll-socials
   jekyll-tabs
-  jekyll-terser
+  jekyll-terser!
   jekyll-toc
   jekyll-twitter-plugin
   jemoji
