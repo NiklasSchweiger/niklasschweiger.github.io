@@ -18,7 +18,7 @@ group :jekyll_plugins do
     gem 'jekyll-regex-replace'
     gem 'jekyll-scholar'
     gem 'jekyll-sitemap'
-    gem 'jekyll-socials', '0.0.6' # pinned: v0.0.7 has a logo_value nil bug
+    gem 'jekyll-socials'
     gem 'jekyll-tabs'
     gem 'jekyll-terser', :git => "https://github.com/RobertoJBeltran/jekyll-terser.git"
     gem 'jekyll-toc'
