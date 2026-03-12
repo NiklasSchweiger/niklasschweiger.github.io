@@ -53,7 +53,7 @@
       "studyType": "M.Sc.",
       "startDate": "2023-10-01",
       "endDate": "",
-      "score": "",
+      "score": "1.4 (current, German scale)",
       "courses": [
         "Machine Learning",
         "Deep Learning",
@@ -69,7 +69,7 @@
       "studyType": "B.Sc.",
       "startDate": "2020-10-01",
       "endDate": "2023-09-30",
-      "score": "2.9",
+      "score": "2.5 (final, German scale)",
       "courses": [
         "Artificial Intelligence and Machine Learning (from 5th semester)",
         "Signal Processing",
@@ -154,7 +154,7 @@
   "interests": [
     {
       "name": "Sport",
-      "keywords": ["Football", "Strength Training", "Running", "Cycling"]
+      "keywords": ["Football", "Strength Training", "Running"]
     },
     {
       "name": "Music",
