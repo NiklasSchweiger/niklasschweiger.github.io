@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: MSc Student at <a href='https://www.tum.de' target='_blank'>TU Munich</a> · Computer Science
 
 profile:
   align: right
@@ -21,9 +21,12 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Hi!
+Hi! I am a Master's student in Computer Science at the Technical University of Munich (TUM), interested in machine learning, generative models, and inference-time alignment.
+
+## Awards
+
+🥈 **2nd Place – TUM Makeathon** (2025)  
+Awarded second prize at the TUM Makeathon. [LinkedIn post](https://www.linkedin.com/in/niklas-schweiger-15b799274/) for more details.
