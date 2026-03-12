@@ -26,6 +26,18 @@
   },
   "work": [
     {
+      "name": "Chair for Computer Vision & Artificial Intelligence (CVAI), TU Munich",
+      "position": "Research Assistant (HiWi)",
+      "url": "https://cvg.cit.tum.de",
+      "startDate": "2026-03-01",
+      "endDate": "2026-09-30",
+      "summary": "Student research assistant at Prof. Daniel Cremers' group — the same lab where I am writing my Master's thesis and where the ICLR 2026 paper was produced. Research spans generative models and inference-time alignment.",
+      "highlights": [
+        "Research in generative models and inference-time optimization",
+        "Same group as ICLR 2026 paper and Master's thesis"
+      ]
+    },
+    {
       "name": "Siemens AG",
       "position": "Intern – AI in Industrial Production",
       "startDate": "2023-01-01",
