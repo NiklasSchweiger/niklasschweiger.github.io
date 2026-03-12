@@ -6,7 +6,7 @@ subtitle: MSc Student at <a href='https://www.tum.de' target='_blank'>TU Munich<
 
 profile:
   align: right
-  image: niklas_pic.jpg
+  image: 863a9578-6ef9-4fa3-bee0-6203a62e9691.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>MSc Student</p>
