@@ -42,10 +42,9 @@
       "position": "Intern – AI in Industrial Production",
       "startDate": "2023-01-01",
       "endDate": "2023-12-31",
-      "summary": "Developed a Feature Matching system that compares 3D technical drawings against a manufacturing parts database. Computed distances between CNN embeddings from pretrained models using multi-view renderings of 3D objects to retrieve the closest matching part.",
+      "summary": "Developed a 3D feature matching system using CNN embeddings to automate part retrieval in manufacturing databases.",
       "highlights": [
-        "Built multi-view CNN embedding pipeline for 3D part similarity retrieval",
-        "Used pretrained models and embedding distance metrics"
+        "Implemented multi-view CNN pipeline for part similarity retrieval"
       ]
     },
     {
