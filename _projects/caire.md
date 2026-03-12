@@ -27,7 +27,7 @@ Caire is an AI-powered assistant designed to automate medical reporting. The app
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/Bildschirmfoto 2023-05-05 um 18.47.30.png" title="Caire UI Mockups" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/Bildschirmfoto 2023-05-05 um 18.47.30.jpg" title="Caire UI Mockups" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -38,7 +38,7 @@ Caire is an AI-powered assistant designed to automate medical reporting. The app
 Out of dozens of participating teams, **Caire** was awarded **2nd Place** in the overall competition. The judges highlighted the feasibility of the solution and the immediately addressable market of hospital administrative efficiency.
 
 - **Award**: 🥈 2nd Place Overall
-- **Prize**: €3,000
+- **Prize**: €2,000
 - **Team**: Enough Slices
 - **Challenge**: "Bridge the Gap" by Knowron
 

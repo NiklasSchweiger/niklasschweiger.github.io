@@ -2,14 +2,14 @@
 layout: page
 title: Trust-Region Noise Search (TRS)
 description: Black-box alignment for diffusion and flow models. Accepted @ ReALM-GEN Workshop, ICLR 2026.
-img: assets/img/Teaser_Figure.png
+img: assets/img/Teaser_Figure.jpg
 importance: 2
 category: research
 ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Teaser_Figure.png" title="TRS Teaser" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Teaser_Figure.jpg" title="TRS Teaser" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -26,7 +26,7 @@ The core idea of TRS is to iteratively explore the noise space $\mathbb{R}^M$ to
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/trs_method Kopie.png" title="TRS Methodology" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/trs_method Kopie.jpg" title="TRS Methodology" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
