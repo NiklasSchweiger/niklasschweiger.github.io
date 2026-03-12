@@ -57,8 +57,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-i-am-thrilled-to-announce-that-i-was-awarded-second-prize-in-a-recent-competition-check-out-my-linkedin-for-more-details",
-          title: 'I am thrilled to announce that I was awarded Second Prize in a...',
+            },},{id: "news-our-paper-trust-region-noise-search-for-black-box-alignment-of-diffusion-and-flow-models-was-accepted-at-the-realm-gen-workshop-iclr-2026",
+          title: 'Our paper Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
