@@ -30,10 +30,10 @@
       "position": "Intern – AI in Industrial Production",
       "startDate": "2023-01-01",
       "endDate": "2023-12-31",
-      "summary": "Applied machine learning methods for quality assurance and process optimization in manufacturing. Developed data-driven models using Python and PyTorch.",
+      "summary": "Developed a Feature Matching system that compares 3D technical drawings against a manufacturing parts database. Computed distances between CNN embeddings from pretrained models using multi-view renderings of 3D objects to retrieve the closest matching part.",
       "highlights": [
-        "Implemented ML pipelines for production anomaly detection",
-        "Worked with Python, PyTorch, and industrial data"
+        "Built multi-view CNN embedding pipeline for 3D part similarity retrieval",
+        "Used pretrained models and embedding distance metrics"
       ]
     },
     {
@@ -109,10 +109,10 @@
   ],
   "awards": [
     {
-      "title": "2nd Place – TUM Makeathon",
-      "date": "2023-01-01",
-      "awarder": "Technical University of Munich",
-      "summary": "Runner-up at TU Munich's university-wide innovation competition."
+      "title": "2nd Place – TUM.ai Makeathon (€3,000 prize)",
+      "date": "2023-04-01",
+      "awarder": "TUM.ai",
+      "summary": "Built 'Caire', an app designed to overcome language barriers between nurses and patients. Using AI, it extracts medically relevant information from natural speech and automatically generates structured medical reports."
     }
   ],
   "publications": [
@@ -121,7 +121,7 @@
       "publisher": "ReALM-GEN Workshop @ ICLR 2026",
       "releaseDate": "2026-03-01",
       "url": "",
-      "summary": "We propose a simple trust-region based search algorithm (TRS) which treats the pre-trained generative and reward models as a black-box and only optimizes the source noise. As a reward-agnostic and constraint-agnostic approach, TRS is particularly suitable for real-world preference alignment settings where rewards are expensive, imperfect, and often non-differentiable."
+      "summary": "We propose a simple trust-region based search algorithm (TRS) which treats the pre-trained generative and reward models as a black-box and only optimizes the source noise. Evaluated across text-to-image, molecule, and protein design tasks. ICLR 2026, Rio de Janeiro, Brazil."
     }
   ],
   "skills": [
@@ -149,10 +149,6 @@
     {
       "language": "English",
       "fluency": "C1 – Professional working proficiency"
-    },
-    {
-      "language": "Swedish",
-      "fluency": "Basic"
     }
   ],
   "interests": [

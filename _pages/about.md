@@ -37,5 +37,5 @@ My current research focuses on **black-box inference-time alignment** of generat
 
 ## Awards
 
-🥈 **2nd Place – TUM Makeathon** (2023)  
-Awarded second prize at TU Munich's university-wide innovation competition. [LinkedIn](https://www.linkedin.com/in/niklas-schweiger-15b799274/) for more details.
+🥈 **2nd Place – TUM.ai Makeathon** (April 2023) · *€3,000 prize*  
+Built *Caire*, an app designed to overcome language barriers between nurses and patients. Using AI, it extracts medically relevant information from natural speech and automatically generates structured medical reports. [LinkedIn](https://www.linkedin.com/in/niklas-schweiger-15b799274/) for more details.
