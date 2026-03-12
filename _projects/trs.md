@@ -36,6 +36,6 @@ The core idea of TRS is to iteratively explore the noise space $\mathbb{R}^M$ to
 ## Impact
 Our results demonstrate that TRS can steering models towards high-aesthetic scores in text-to-image tasks and optimal docking scores in molecule design—all without ever calculating a single gradient through the generative model itself.
 
-- **Status**: Accepted @ [ReALM-GEN Workshop @ ICLR 2026](https://iclr.cc) (Rio de Janeiro)
+- **Status**: Accepted @ [ReALM-GEN Workshop @ ICLR 2026](https://realm-gen-workshop.github.io/) (Rio de Janeiro)
 - **Collaborators**: K. Ram, Prof. Daniel Cremers
 - **Focus**: High-efficiency alignment, non-differentiable rewards, black-box optimization.

@@ -33,7 +33,7 @@ Before my Master's, I interned at **Siemens AG**, applying AI methods to industr
 
 ## Publications
 
-My current research focuses on **black-box inference-time alignment** of generative models. Our paper *Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models* was accepted at the [ReALM-GEN Workshop @ ICLR 2026](https://iclr.cc). We propose a simple trust-region search algorithm that treats the generative model as a black-box and optimizes only the source noise — making it applicable to expensive, imperfect, or non-differentiable reward functions across text-to-image, molecule, and protein design tasks.
+My current research focuses on **black-box inference-time alignment** of generative models. Our paper *Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models* was accepted at the [ReALM-GEN Workshop @ ICLR 2026](https://realm-gen-workshop.github.io/). We propose a simple trust-region search algorithm that treats the generative model as a black-box and optimizes only the source noise — making it applicable to expensive, imperfect, or non-differentiable reward functions across text-to-image, molecule, and protein design tasks.
 
 ## Awards
 
