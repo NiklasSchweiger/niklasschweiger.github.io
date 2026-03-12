@@ -12,11 +12,11 @@
     />
     <style>
       :root {
-        --navy: #0f2040;
+        --navy: #1a365d; /* Deeper blue, less greyish */
         --accent: #2563eb;
         --accent-light: #dbeafe;
         --gray-50: #f8fafc;
-        --gray-100: #f1f5f9;
+        --gray-100: #f8fafc;
         --gray-300: #cbd5e1;
         --gray-500: #64748b;
         --gray-700: #334155;
@@ -53,7 +53,7 @@
       .header {
         background: var(--navy);
         color: white;
-        padding: 22px 30px 18px;
+        padding: 18px 30px 14px;
         display: flex;
         align-items: center;
         gap: 20px;
@@ -149,7 +149,8 @@
 
       /* ─── SECTION ─────────────────────────────────────────── */
       .section {
-        margin-bottom: 18px;
+        margin-bottom: 14px;
+        break-inside: avoid;
       }
 
       .section-title {
@@ -165,8 +166,9 @@
 
       /* ─── TIMELINE ENTRIES ────────────────────────────────── */
       .entry {
-        margin-bottom: 14px;
+        margin-bottom: 10px;
         position: relative;
+        break-inside: avoid;
       }
 
       .entry:last-child {
@@ -220,7 +222,7 @@
       .divider {
         height: 1px;
         background: var(--gray-100);
-        margin: 10px 0;
+        margin: 8px 0;
       }
 
       /* ─── SIDEBAR ITEMS ───────────────────────────────────── */
