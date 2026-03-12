@@ -46,14 +46,6 @@
       "highlights": [
         "Implemented multi-view CNN pipeline for part similarity retrieval"
       ]
-    },
-    {
-      "name": "Freisinger Hof",
-      "position": "Part-time — Hospitality",
-      "startDate": "2020-01-01",
-      "endDate": "2020-12-31",
-      "summary": "Service and kitchen support in the restaurant industry.",
-      "highlights": []
     }
   ],
   "education": [
@@ -94,26 +86,6 @@
       "studyType": "Exchange",
       "startDate": "2024-09-01",
       "endDate": "2025-01-31",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "Hochschule Weihenstephan-Triesdorf (HSWT)",
-      "url": "https://www.hswt.de",
-      "area": "Management for Renewable Energies",
-      "studyType": "B.Sc. (1st year only)",
-      "startDate": "2019-10-01",
-      "endDate": "2020-09-30",
-      "score": "",
-      "courses": []
-    },
-    {
-      "institution": "Gymnasium Kirchseeon",
-      "url": "",
-      "area": "Mathematics and Natural Sciences",
-      "studyType": "Abitur",
-      "startDate": "2011-09-01",
-      "endDate": "2019-06-30",
       "score": "",
       "courses": []
     }
