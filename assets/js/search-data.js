@@ -105,6 +105,16 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-caire",
+          title: 'Caire',
+          description: "Overcoming language barriers in healthcare with AI-powered reporting. 🥈 2nd Place at TUM.ai Makeathon.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/caire/";
+            },},{id: "projects-trust-region-noise-search-trs",
+          title: 'Trust-Region Noise Search (TRS)',
+          description: "Black-box alignment for diffusion and flow models. Accepted @ ReALM-GEN Workshop, ICLR 2026.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/trs/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
