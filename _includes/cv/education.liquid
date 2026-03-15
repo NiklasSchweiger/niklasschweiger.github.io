@@ -65,7 +65,11 @@
           {% endif %}
 
           {% capture cv_icon %}
-            {% if entry.icon %}<i class="{{ entry.icon }}" style="margin-right: 5px;"></i>{% endif %}
+            {% if entry.logo %}
+              <img src="{{ entry.logo }}" alt="logo" style="width: 20px; height: 18px; object-fit: contain; margin-right: 6px; vertical-align: middle;">
+            {% elsif entry.icon %}
+              <i class="{{ entry.icon }}" style="margin-right: 5px;"></i>
+            {% endif %}
           {% endcapture %}
           {% if entry.institution %}
             <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ cv_icon }}{{ entry.institution }}</h6>

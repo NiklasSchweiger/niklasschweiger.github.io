@@ -63,7 +63,11 @@
           {% endif %}
 
           {% capture cv_icon %}
-            {% if entry.icon %}<i class="{{ entry.icon }}" style="margin-right: 5px;"></i>{% endif %}
+            {% if entry.logo %}
+              <img src="{{ entry.logo }}" alt="logo" style="width: 20px; height: 18px; object-fit: contain; margin-right: 6px; vertical-align: middle;">
+            {% elsif entry.icon %}
+              <i class="{{ entry.icon }}" style="margin-right: 5px;"></i>
+            {% endif %}
           {% endcapture %}
           {% capture company_name %}
             {% if entry.name %}{{ entry.name }}{% elsif entry.company %}{{ entry.company }}{% elsif entry.organization %}{{ entry.organization }}{% endif %}

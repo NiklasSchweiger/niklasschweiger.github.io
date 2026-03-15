@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -36,3 +36,14 @@ Before my Master's, I interned at **Siemens AG**, applying AI methods to industr
 
 🥈 **2nd Place – TUM.ai Makeathon** (April 2023) · *€2,000 prize*  
 Built *Caire*, an app designed to overcome language barriers between nurses and patients. Using AI, it extracts medically relevant information from natural speech and automatically generates structured medical reports. [See more](/projects/caire/)
+
+## Projects
+
+<div class="projects">
+  <div class="row row-cols-1 row-cols-md-2">
+    {% assign sorted_projects = site.projects | sort: "importance" %}
+    {% for project in sorted_projects %}
+      {% include projects.liquid %}
+    {% endfor %}
+  </div>
+</div>

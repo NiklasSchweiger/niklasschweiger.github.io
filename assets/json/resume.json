@@ -28,6 +28,7 @@
     {
       "name": "Chair for Computer Vision & Artificial Intelligence (CVAI), TU Munich",
       "icon": "fa-solid fa-graduation-cap",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Logo_of_the_Technical_University_of_Munich.svg",
       "position": "Research Assistant (HiWi)",
       "url": "https://cvg.cit.tum.de",
       "startDate": "2026-03-01",
@@ -41,6 +42,7 @@
     {
       "name": "Siemens AG",
       "icon": "fa-solid fa-industry",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg",
       "position": "Intern – AI in Industrial Production",
       "startDate": "2023-01-01",
       "endDate": "2023-12-31",
@@ -54,6 +56,7 @@
     {
       "institution": "Technical University of Munich (TUM)",
       "icon": "fa-solid fa-graduation-cap",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Logo_of_the_Technical_University_of_Munich.svg",
       "url": "https://www.tum.de",
       "area": "Robotics, Cognition, Intelligence",
       "studyType": "M.Sc.",
@@ -71,6 +74,7 @@
     {
       "institution": "Technical University of Munich (TUM)",
       "icon": "fa-solid fa-graduation-cap",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Logo_of_the_Technical_University_of_Munich.svg",
       "url": "https://www.tum.de",
       "area": "Electrical Engineering and Information Technology",
       "studyType": "B.Sc.",
@@ -86,6 +90,7 @@
     {
       "institution": "Chalmers University of Technology",
       "icon": "fa-solid fa-graduation-cap",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Chalmers_University_of_Technology_logo.svg",
       "url": "https://www.chalmers.se",
       "area": "Exchange Semester",
       "studyType": "Exchange",
