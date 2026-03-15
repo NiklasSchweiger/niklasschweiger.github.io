@@ -64,8 +64,11 @@
             <h6 class="title font-weight-bold ml-1 ml-md-4">{{ study_type }}</h6>
           {% endif %}
 
+          {% capture cv_icon %}
+            {% if entry.icon %}<i class="{{ entry.icon }}" style="margin-right: 5px;"></i>{% endif %}
+          {% endcapture %}
           {% if entry.institution %}
-            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ entry.institution }}</h6>
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ cv_icon }}{{ entry.institution }}</h6>
           {% endif %}
 
           {% if entry.area %}

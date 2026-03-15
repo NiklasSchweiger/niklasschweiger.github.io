@@ -8,5 +8,7 @@
   month     = {March},
   keywords  = {Inference-time guidance, noise optimization},
   abstract  = {Optimizing the noise samples of diffusion and flow models is an increasingly popular approach to align these models to target rewards at inference time. However, we observe that these approaches are usually restricted to differentiable or cheap reward functions, the formulation of the underlying pre-trained generative model, or are memory/compute inefficient. We instead propose a simple trust-region based search algorithm (TRS) which treats the pre-trained generative and reward models as a black-box and only optimizes the source noise. As a reward-agnostic and constraint-agnostic approach, TRS is particularly suitable for real-world preference alignment settings where rewards, such as human proxies or physical constraints, are expensive, imperfect, and often unavailable during training. Our algorithm adheres to strict evaluation budgets by balancing global exploration with local exploitation, making it robust to noisy, delayed, or non-differentiable rewards. We evaluate TRS across text-to-image, molecule, and protein design tasks, obtaining considerably improved output samples over base generative models and other inference-time alignment approaches which optimize source noise samples or trajectories. Our source code will be made publicly available.},
-  selected  = {true}
+  selected  = {true},
+  website   = {https://niklasschweiger.github.io/trust-region-noise-search/},
+  code      = {https://github.com/NiklasSchweiger/trust-region-noise-search}
 }

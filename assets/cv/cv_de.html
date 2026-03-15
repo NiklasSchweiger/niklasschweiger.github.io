@@ -12,31 +12,24 @@
     />
     <style>
       :root {
-        --navy: #1a365d; /* Deeper blue, less greyish */
+        --dark: #0f172a;
         --accent: #2563eb;
-        --accent-light: #dbeafe;
-        --gray-50: #f8fafc;
-        --gray-100: #f8fafc;
-        --gray-300: #cbd5e1;
-        --gray-500: #64748b;
-        --gray-700: #334155;
-        --gray-900: #0f172a;
-        --text: #1e293b;
+        --accent-light: #eff6ff;
+        --border-color: #e2e8f0;
+        --text-main: #334155;
+        --text-muted: #64748b;
+        --bg-sidebar: #f8fafc;
       }
 
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      html,
-      body {
-        font-family: "Inter", sans-serif;
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      
+      html, body {
+        font-family: "Inter", -apple-system, sans-serif;
         font-size: 10pt;
-        color: var(--text);
+        color: var(--text-main);
         background: #e5e7eb;
-        line-height: 1.4;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
       }
 
       .page {
@@ -44,307 +37,145 @@
         min-height: 297mm;
         margin: 20px auto;
         background: white;
-        box-shadow: 0 4px 40px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
+        border-radius: 4px;
+        overflow: hidden;
       }
 
-      /* ─── HEADER ─────────────────────────────────────────── */
       .header {
-        background: var(--navy);
+        background: linear-gradient(135deg, var(--dark), #1e293b);
         color: white;
-        padding: 16px 30px 12px;
+        padding: 24px 32px 20px;
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 24px;
       }
 
       .header-photo {
-        width: 88px;
-        height: 88px;
+        width: 96px;
+        height: 96px;
         border-radius: 50%;
         object-fit: cover;
-        border: 3px solid rgba(255, 255, 255, 0.25);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         flex-shrink: 0;
       }
 
-      .header-photo-placeholder {
-        width: 88px;
-        height: 88px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.15);
-        border: 3px solid rgba(255, 255, 255, 0.25);
-        flex-shrink: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: rgba(255,255,255,0.5);
-        font-size: 28px;
-      }
-
-      .header-info {
-        flex: 1;
-      }
-
+      .header-info { flex: 1; }
+      
       .header-name {
         font-size: 26pt;
         font-weight: 700;
-        letter-spacing: -0.5px;
+        letter-spacing: -0.03em;
         line-height: 1.1;
+        margin-bottom: 4px;
       }
 
       .header-title {
         font-size: 11pt;
-        font-weight: 300;
-        color: rgba(255, 255, 255, 0.75);
-        margin-top: 3px;
-        letter-spacing: 0.3px;
+        font-weight: 500;
+        color: #94a3b8;
+        letter-spacing: 0.01em;
+      }
+
+      .header-summary {
+        font-size: 9.5pt;
+        color: #e2e8f0;
+        margin-top: 6px;
+        max-width: 95%;
+        line-height: 1.4;
       }
 
       .header-contacts {
-        margin-top: 12px;
+        margin-top: 14px;
         display: flex;
         flex-wrap: wrap;
-        gap: 6px 20px;
+        gap: 8px 18px;
+        padding-top: 14px;
+        border-top: 1px solid rgba(255,255,255,0.1);
       }
 
       .contact-item {
         display: flex;
         align-items: center;
         gap: 6px;
-        font-size: 9pt;
-        color: rgba(255, 255, 255, 0.85);
+        font-size: 8.5pt;
+        font-weight: 500;
+        color: #cbd5e1;
       }
 
-      .contact-item svg {
-        width: 13px;
-        height: 13px;
-        opacity: 0.8;
-        flex-shrink: 0;
-      }
+      .contact-item svg { width: 14px; height: 14px; opacity: 0.9; }
+      .contact-item a { color: inherit; text-decoration: none; }
 
-      .contact-item a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      /* ─── BODY ───────────────────────────────────────────── */
       .body {
         display: grid;
-        grid-template-columns: 200px 1fr;
+        grid-template-columns: 210px 1fr;
         flex: 1;
       }
 
-      /* ─── SIDEBAR ─────────────────────────────────────────── */
       .sidebar {
-        background: var(--gray-50);
-        padding: 24px 18px;
-        border-right: 1px solid var(--gray-100);
+        background: var(--bg-sidebar);
+        padding: 26px 20px;
+        border-right: 1px solid var(--border-color);
       }
 
-      /* ─── MAIN ────────────────────────────────────────────── */
-      .main {
-        padding: 20px 24px;
-      }
+      .main { padding: 26px 28px; }
 
-      /* ─── SECTION ─────────────────────────────────────────── */
-      .section {
-        margin-bottom: 12px;
-        break-inside: avoid;
-      }
-
+      .section { margin-bottom: 20px; break-inside: avoid; }
       .section-title {
-        font-size: 9pt;
+        font-size: 10pt;
         font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 1.2px;
-        color: var(--accent);
-        border-bottom: 2px solid var(--accent);
-        padding-bottom: 3px;
-        margin-bottom: 10px;
-      }
-
-      /* ─── TIMELINE ENTRIES ────────────────────────────────── */
-      .entry {
-        margin-bottom: 8px;
-        position: relative;
-        break-inside: avoid;
-      }
-
-      .entry:last-child {
-        margin-bottom: 0;
-      }
-
-      .entry-header {
+        letter-spacing: 0.08em;
+        color: var(--dark);
+        margin-bottom: 12px;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         gap: 8px;
       }
-
-      .entry-title {
-        font-size: 10.5pt;
-        font-weight: 600;
-        color: var(--gray-900);
-        line-height: 1.3;
-      }
-
-      .entry-date {
-        font-size: 8.5pt;
-        color: var(--gray-500);
-        white-space: nowrap;
-        font-weight: 500;
-        background: var(--gray-100);
-        padding: 2px 6px;
-        border-radius: 4px;
-        flex-shrink: 0;
-      }
-
-      .entry-org {
-        font-size: 9.5pt;
-        color: var(--accent);
-        font-weight: 500;
-        margin-top: 1px;
-      }
-
-      .entry-desc {
-        font-size: 9.5pt;
-        color: var(--gray-700);
-        margin-top: 4px;
-        line-height: 1.5;
-      }
-
-      .entry-desc li {
-        margin-left: 14px;
-        margin-top: 2px;
-      }
-
-      .divider {
+      .section-title::after {
+        content: "";
+        flex: 1;
         height: 1px;
-        background: var(--gray-100);
-        margin: 6px 0;
+        background: var(--border-color);
       }
 
-      /* ─── SIDEBAR ITEMS ───────────────────────────────────── */
-      .skill-item {
-        margin-bottom: 8px;
-      }
+      .entry { margin-bottom: 14px; position: relative; break-inside: avoid; }
+      .entry:last-child { margin-bottom: 0; }
+      .entry-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 1px; }
+      .entry-title { font-size: 10.5pt; font-weight: 600; color: var(--dark); }
+      .entry-date { font-size: 8.5pt; color: var(--text-muted); font-weight: 500; white-space: nowrap; }
+      .entry-org { font-size: 9.5pt; color: var(--accent); font-weight: 500; }
+      .entry-desc { font-size: 9.5pt; color: var(--text-main); margin-top: 6px; }
+      .entry-desc ul { margin-left: 16px; margin-top: 4px; padding-left: 0; }
+      .entry-desc li { margin-bottom: 3px; }
 
-      .skill-name {
-        font-size: 9.5pt;
-        font-weight: 500;
-        color: var(--gray-900);
-        margin-bottom: 3px;
-        display: flex;
-        justify-content: space-between;
-      }
+      .divider { height: 1px; background: transparent; margin: 0; }
 
-      .skill-level-text {
-        font-size: 8pt;
-        color: var(--gray-500);
-      }
+      .skill-item { margin-bottom: 10px; }
+      .skill-name { font-size: 9pt; font-weight: 600; color: var(--dark); margin-bottom: 4px; display: flex; justify-content: space-between; }
+      .skill-level-text { font-size: 8pt; color: var(--text-muted); font-weight: 400; }
+      .skill-bar { height: 4px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
+      .skill-fill { height: 100%; background: var(--accent); border-radius: 4px; }
 
-      .skill-bar {
-        height: 4px;
-        background: var(--gray-200, #e2e8f0);
-        border-radius: 2px;
-        overflow: hidden;
-      }
+      .lang-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 9pt; }
+      .lang-name { font-weight: 600; color: var(--dark); }
+      .lang-level { color: var(--accent); font-weight: 500; font-size: 8.5pt; }
 
-      .skill-fill {
-        height: 100%;
-        background: var(--accent);
-        border-radius: 2px;
-      }
+      .interest-item { font-size: 9pt; color: var(--text-main); margin-bottom: 6px; display: flex; align-items: center; gap: 8px; font-weight: 500; }
+      .interest-icon { color: var(--accent); width: 14px; display: inline-block; text-align: center; }
 
-      .lang-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 6px;
-      }
-
-      .lang-name {
-        font-size: 9.5pt;
-        font-weight: 500;
-        color: var(--gray-900);
-      }
-
-      .lang-level {
-        font-size: 8.5pt;
-        color: white;
-        background: var(--accent);
-        padding: 1px 8px;
-        border-radius: 10px;
-        font-weight: 500;
-      }
-
-      .lang-level.native {
-        background: var(--navy);
-      }
-
-      .interest-item {
-        font-size: 9.5pt;
-        color: var(--gray-700);
-        margin-bottom: 5px;
-        display: flex;
-        align-items: flex-start;
-        gap: 6px;
-      }
-
-      .interest-icon {
-        font-size: 11pt;
-        line-height: 1.4;
-        flex-shrink: 0;
-      }
-
-      .award-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 5px;
-        background: #fef9c3;
-        border: 1px solid #fde047;
-        color: #713f12;
-        font-size: 8.5pt;
-        font-weight: 600;
-        padding: 3px 8px;
-        border-radius: 5px;
-        margin-top: 4px;
-      }
-
-      .pub-entry {
-        font-size: 9pt;
-        color: var(--gray-700);
-        line-height: 1.5;
-        margin-bottom: 8px;
-      }
-
-      .pub-venue {
-        font-style: italic;
-        color: var(--accent);
-      }
-
-      .tag {
-        display: inline-block;
-        background: var(--accent-light);
-        color: var(--accent);
-        font-size: 7.5pt;
-        font-weight: 600;
-        padding: 1px 6px;
-        border-radius: 3px;
-        margin-top: 4px;
-        margin-right: 3px;
-      }
+      .award-badge { display: inline-flex; align-items: center; padding: 3px 8px; background: #fef3c7; border: 1px solid #fde68a; color: #92400e; font-size: 8.5pt; font-weight: 600; border-radius: 4px; margin-top: 6px; }
+      .pub-entry { font-size: 9pt; line-height: 1.5; margin-bottom: 10px; }
+      .pub-venue { font-weight: 600; color: var(--accent); }
+      .tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-size: 8pt; font-weight: 600; padding: 2px 8px; border-radius: 12px; margin-top: 6px; }
 
       @media print {
-        html, body {
-          background: white;
-        }
-        .page {
-          margin: 0;
-          box-shadow: none;
-          width: 100%;
-        }
+        html, body { background: white; }
+        .page { margin: 0; box-shadow: none; border-radius: 0; width: 100%; }
+        .header { background: #0f172a; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       }
     </style>
   </head>
@@ -362,7 +193,10 @@
         <div class="header-info">
           <div class="header-name">Niklas Schweiger</div>
           <div class="header-title">
-            M.Sc. Student · Robotics, Cognition, Intelligence · TU München
+            KI &amp; Machine Learning Researcher | M.Sc. Student der TU München
+          </div>
+          <div class="header-summary">
+            Spezialisiert auf generative Modelle, Inference-Time Alignment und Computer Vision. Erfahrung in der Entwicklung neuartiger Algorithmen für Diffusions- und Flow-Modelle (Publikation ICLR '26). Fokussiert auf agnostische Lösungsansätze für hochkomplexe KI-Systeme.
           </div>
           <div class="header-contacts">
             <span class="contact-item">
