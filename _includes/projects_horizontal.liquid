@@ -1,18 +1,21 @@
 <div class="col mb-4">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      <div class="row no-gutters">
-        {% if project.img %}
-          <div class="col-md-5 d-flex align-items-center justify-content-center p-3">
-            <div style="width: 100%; height: auto; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-              {% include figure.liquid loading="eager" path=project.img alt="project thumbnail" class="img-fluid rounded" %}
-            </div>
-          </div>
-        {% endif %}
-        <div class="{% if project.img %}col-md-7{% else %}col-12{% endif %}">
-          <div class="card-body">
-            <h4 class="card-title font-weight-bold" style="font-size: 1.25rem;">{{ project.title }}</h4>
-            <p class="card-text">{{ project.description }}</p>
+  <div class="card h-100 hoverable">
+    <div class="row no-gutters">
+      {% if project.img %}
+        <div class="col-md-5 d-flex align-items-center justify-content-center p-3">
+          <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" style="width: 100%; height: auto; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+            {% include figure.liquid loading="eager" path=project.img alt="project thumbnail" class="img-fluid rounded" %}
+          </a>
+        </div>
+      {% endif %}
+      <div class="{% if project.img %}col-md-7{% else %}col-12{% endif %}">
+        <div class="card-body">
+          <h4 class="card-title font-weight-bold" style="font-size: 1.25rem;">
+            <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}" style="color: inherit; text-decoration: none;">
+              {{ project.title }}
+            </a>
+          </h4>
+          <p class="card-text">{{ project.description }}</p>
             <div class="row ml-1 mr-1 p-0">
               {% if project.github %}
                 <div class="github-icon">
@@ -32,5 +35,5 @@
         </div>
       </div>
     </div>
-  </a>
+  </div>
 </div>
