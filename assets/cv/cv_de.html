@@ -6,401 +6,245 @@
     <title>Niklas Schweiger – Lebenslauf</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
       :root {
-        --dark: #0f172a;
+        --text-main: #111827;
+        --text-muted: #4b5563;
         --accent: #2563eb;
-        --accent-light: #eff6ff;
-        --border-color: #e2e8f0;
-        --text-main: #334155;
-        --text-muted: #64748b;
-        --bg-sidebar: #f8fafc;
+        --border: #e5e7eb;
       }
-
       * { box-sizing: border-box; margin: 0; padding: 0; }
-      
-      html, body {
-        font-family: "Inter", -apple-system, sans-serif;
-        font-size: 10pt;
+      body {
+        font-family: 'Inter', sans-serif;
         color: var(--text-main);
-        background: #e5e7eb;
-        line-height: 1.5;
-        letter-spacing: -0.01em;
+        background: #f3f4f6;
+        line-height: 1.6;
+        font-size: 10pt;
       }
-
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      
       .page {
         width: 210mm;
         min-height: 297mm;
-        margin: 20px auto;
+        margin: 2rem auto;
         background: white;
-        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        border-radius: 4px;
-        overflow: hidden;
+        padding: 3rem 4rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
       }
 
+      /* Header */
       .header {
-        background: linear-gradient(135deg, var(--dark), #1e293b);
-        color: white;
-        padding: 24px 32px 20px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 24px;
+        border-bottom: 2px solid var(--text-main);
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
       }
-
-      .header-photo {
-        width: 96px;
-        height: 96px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 2px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-        flex-shrink: 0;
-      }
-
       .header-info { flex: 1; }
-      
-      .header-name {
-        font-size: 26pt;
+      .name {
+        font-size: 28pt;
         font-weight: 700;
-        letter-spacing: -0.03em;
-        line-height: 1.1;
-        margin-bottom: 4px;
+        letter-spacing: -0.02em;
+        margin-bottom: 0.5rem;
+        color: var(--text-main);
       }
-
-      .header-title {
-        font-size: 11pt;
+      .title {
+        font-size: 12pt;
         font-weight: 500;
-        color: #94a3b8;
-        letter-spacing: 0.01em;
+        color: var(--text-muted);
+        margin-bottom: 1rem;
       }
-
-      .header-summary {
-        font-size: 9.5pt;
-        color: #e2e8f0;
-        margin-top: 6px;
-        max-width: 95%;
-        line-height: 1.4;
-      }
-
-      .header-contacts {
-        margin-top: 14px;
+      .contact-info {
         display: flex;
         flex-wrap: wrap;
-        gap: 8px 18px;
-        padding-top: 14px;
-        border-top: 1px solid rgba(255,255,255,0.1);
+        gap: 1rem;
+        font-size: 9pt;
+        color: var(--text-muted);
+      }
+      .contact-info > div { display: flex; align-items: center; gap: 0.3rem; }
+      
+      .header-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 2rem;
       }
 
-      .contact-item {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        font-size: 8.5pt;
-        font-weight: 500;
-        color: #cbd5e1;
-      }
-
-      .contact-item svg { width: 14px; height: 14px; opacity: 0.9; }
-      .contact-item a { color: inherit; text-decoration: none; }
-
-      .body {
-        display: grid;
-        grid-template-columns: 210px 1fr;
-        flex: 1;
-      }
-
-      .sidebar {
-        background: var(--bg-sidebar);
-        padding: 26px 20px;
-        border-right: 1px solid var(--border-color);
-      }
-
-      .main { padding: 26px 28px; }
-
-      .section { margin-bottom: 20px; break-inside: avoid; }
+      /* Sections */
+      .section { margin-bottom: 2rem; }
       .section-title {
-        font-size: 10pt;
-        font-weight: 700;
+        font-size: 14pt;
+        font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: var(--dark);
-        margin-bottom: 12px;
+        letter-spacing: 0.05em;
+        color: var(--text-main);
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.3rem;
+        margin-bottom: 1rem;
+      }
+
+      /* Entries */
+      .entry { margin-bottom: 1.2rem; page-break-inside: avoid; }
+      .entry-header {
         display: flex;
-        align-items: center;
-        gap: 8px;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 0.2rem;
       }
-      .section-title::after {
-        content: "";
-        flex: 1;
-        height: 1px;
-        background: var(--border-color);
+      .entry-title { font-weight: 600; font-size: 11pt; }
+      .entry-date { font-size: 9.5pt; color: var(--text-muted); font-weight: 500; }
+      .entry-org { font-style: italic; color: var(--text-main); font-size: 10pt; margin-bottom: 0.3rem; }
+      .entry-desc { font-size: 9.5pt; color: var(--text-muted); }
+      .entry-desc ul { margin-left: 1.2rem; margin-top: 0.3rem; }
+      .entry-desc li { margin-bottom: 0.2rem; }
+
+      /* Two column lists for skills etc */
+      .grid-list {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 0.5rem 1rem;
+        font-size: 9.5pt;
       }
+      .grid-list dt { font-weight: 600; color: var(--text-main); }
+      .grid-list dd { color: var(--text-muted); margin: 0; }
 
-      .entry { margin-bottom: 14px; position: relative; break-inside: avoid; }
-      .entry:last-child { margin-bottom: 0; }
-      .entry-header { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-bottom: 1px; }
-      .entry-title { font-size: 10.5pt; font-weight: 600; color: var(--dark); }
-      .entry-date { font-size: 8.5pt; color: var(--text-muted); font-weight: 500; white-space: nowrap; }
-      .entry-org { font-size: 9.5pt; color: var(--accent); font-weight: 500; }
-      .entry-desc { font-size: 9.5pt; color: var(--text-main); margin-top: 6px; }
-      .entry-desc ul { margin-left: 16px; margin-top: 4px; padding-left: 0; }
-      .entry-desc li { margin-bottom: 3px; }
+      /* Publications */
+      .pub-item { margin-bottom: 0.8rem; font-size: 9.5pt; }
+      .pub-authors { color: var(--text-main); }
+      .pub-title { font-weight: 600; }
+      .pub-venue { font-style: italic; color: var(--text-muted); }
 
-      .divider { height: 1px; background: transparent; margin: 0; }
-
-      .skill-item { margin-bottom: 10px; }
-      .skill-name { font-size: 9pt; font-weight: 600; color: var(--dark); margin-bottom: 4px; display: flex; justify-content: space-between; }
-      .skill-level-text { font-size: 8pt; color: var(--text-muted); font-weight: 400; }
-      .skill-bar { height: 4px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
-      .skill-fill { height: 100%; background: var(--accent); border-radius: 4px; }
-
-      .lang-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; font-size: 9pt; }
-      .lang-name { font-weight: 600; color: var(--dark); }
-      .lang-level { color: var(--accent); font-weight: 500; font-size: 8.5pt; }
-
-      .interest-item { font-size: 9pt; color: var(--text-main); margin-bottom: 6px; display: flex; align-items: center; gap: 8px; font-weight: 500; }
-      .interest-icon { color: var(--accent); width: 14px; display: inline-block; text-align: center; }
-
-      .award-badge { display: inline-flex; align-items: center; padding: 3px 8px; background: #fef3c7; border: 1px solid #fde68a; color: #92400e; font-size: 8.5pt; font-weight: 600; border-radius: 4px; margin-top: 6px; }
-      .pub-entry { font-size: 9pt; line-height: 1.5; margin-bottom: 10px; }
-      .pub-venue { font-weight: 600; color: var(--accent); }
-      .tag { display: inline-block; background: var(--accent-light); color: var(--accent); font-size: 8pt; font-weight: 600; padding: 2px 8px; border-radius: 12px; margin-top: 6px; }
+      /* Summary */
+      .summary {
+        font-size: 9.5pt;
+        color: var(--text-muted);
+        margin-bottom: 2rem;
+        line-height: 1.6;
+        text-align: justify;
+      }
 
       @media print {
-        html, body { background: white; }
-        .page { margin: 0; box-shadow: none; border-radius: 0; width: 100%; }
-        .header { background: #0f172a; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        body { background: none; }
+        .page { margin: 0; padding: 0; box-shadow: none; width: 100%; }
+        a { color: var(--text-main); text-decoration: none; }
       }
     </style>
   </head>
   <body>
     <div class="page">
-      <!-- ── HEADER ─────────────────────────────────────── -->
       <div class="header">
-        <img
-          class="header-photo"
-          src="../img/863a9578-6ef9-4fa3-bee0-6203a62e9691.jpg"
-          alt="Niklas Schweiger"
-          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
-        />
-        <div class="header-photo-placeholder" style="display:none;">NS</div>
         <div class="header-info">
-          <div class="header-name">Niklas Schweiger</div>
-          <div class="header-title">
-            KI &amp; Machine Learning Researcher | M.Sc. Student der TU München
+          <div class="name">Niklas Schweiger</div>
+          <div class="title">KI & Machine Learning Researcher | M.Sc. Student der TU München</div>
+          <div class="contact-info">
+            <div><i class="fas fa-envelope"></i> <a href="mailto:niklasschweiger@tum.de">niklasschweiger@tum.de</a></div>
+            <div><i class="fas fa-map-marker-alt"></i> München, Deutschland</div>
+            <div><i class="fab fa-github"></i> <a href="https://github.com/NiklasSchweiger">NiklasSchweiger</a></div>
+            <div><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/niklas-schweiger-15b799274">niklas-schweiger</a></div>
+            <div><i class="fas fa-globe"></i> <a href="https://niklasschweiger.github.io">niklasschweiger.github.io</a></div>
           </div>
-          <div class="header-summary">
-            Spezialisiert auf generative Modelle, Inference-Time Alignment und Computer Vision. Erfahrung in der Entwicklung neuartiger Algorithmen für Diffusions- und Flow-Modelle (Publikation ICLR '26). Fokussiert auf agnostische Lösungsansätze für hochkomplexe KI-Systeme.
+        </div>
+        <img class="header-photo" src="../img/863a9578-6ef9-4fa3-bee0-6203a62e9691.jpg" alt="Niklas Schweiger" />
+      </div>
+
+      <div class="summary">
+        Master-Student an der TU München mit Fokus auf generative Modelle, Inference-Time Alignment und Computer Vision. Erfahrung in der Entwicklung neuartiger Algorithmen für Diffusions- und Flow-Modelle (Publikation auf der ICLR '26). Fokussiert auf robuste, belohnungsagnostische Ansätze für komplexe KI-Systeme.
+      </div>
+
+      <div class="section">
+        <div class="section-title">Bildungsweg</div>
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">M.Sc. Robotics, Cognition, Intelligence</div>
+            <div class="entry-date">Okt 2023 – heute</div>
           </div>
-          <div class="header-contacts">
-            <span class="contact-item">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-              </svg>
-              niklasschweiger2000@gmail.com
-            </span>
-            <span class="contact-item">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-              </svg>
-              München, Deutschland
-            </span>
-            <span class="contact-item">
-              <svg fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-              </svg>
-              github.com/NiklasSchweiger
-            </span>
-            <span class="contact-item">
-              <svg fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-              linkedin.com/in/niklas-schweiger-15b799274
-            </span>
-            <span class="contact-item">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"/>
-              </svg>
-              niklasschweiger.github.io
-            </span>
+          <div class="entry-org">Technische Universität München (TUM)</div>
+          <div class="entry-desc">
+            <ul>
+              <li><strong>Aktueller Schnitt:</strong> 1,4</li>
+              <li><strong>Schwerpunkt:</strong> Maschinelles Lernen, Generative Modelle, Inferenzzeit-Optimierung</li>
+              <li><strong>Auslandssemester:</strong> Chalmers University of Technology, Schweden (Sep 2024 – Jan 2025)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">B.Sc. Elektro- und Informationstechnik</div>
+            <div class="entry-date">Okt 2020 – Sep 2023</div>
+          </div>
+          <div class="entry-org">Technische Universität München (TUM)</div>
+          <div class="entry-desc">
+            <ul>
+              <li><strong>Abschlussnote:</strong> 2,5</li>
+              <li><strong>Schwerpunkt:</strong> Künstliche Intelligenz und Machine Learning</li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <!-- ── BODY ──────────────────────────────────────── -->
-      <div class="body">
-
-        <!-- SIDEBAR -->
-        <div class="sidebar">
-
-          <!-- Languages -->
-          <div class="section">
-            <div class="section-title">Sprachen</div>
-            <div class="lang-item">
-              <span class="lang-name">Deutsch</span>
-              <span class="lang-level native">Muttersprache</span>
-            </div>
-            <div class="lang-item">
-              <span class="lang-name">Englisch</span>
-              <span class="lang-level">C1</span>
-            </div>
+      <div class="section">
+        <div class="section-title">Berufserfahrung</div>
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">Wissenschaftliche Hilfskraft (HiWi)</div>
+            <div class="entry-date">Mär 2026 – Sep 2026</div>
           </div>
-
-          <!-- Programming -->
-          <div class="section">
-            <div class="section-title">Programmierung</div>
-            <div class="skill-item">
-              <div class="skill-name">Python <span class="skill-level-text">Sehr gut</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">PyTorch <span class="skill-level-text">Sehr gut</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">Matlab <span class="skill-level-text">Gut</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="width:58%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">C / C++ <span class="skill-level-text">Gut</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-name">LaTeX <span class="skill-level-text">Gut</span></div>
-              <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
-            </div>
+          <div class="entry-org">Lehrstuhl für Computer Vision & Artificial Intelligence (CVAI), TU München</div>
+          <div class="entry-desc">
+            Mitarbeit in der Forschungsgruppe von Prof. Daniel Cremers, in der auch meine Masterarbeit und die ICLR-2026-Publikation entstanden sind. Fokus auf generative Modelle und Computer Vision.
           </div>
-
-          <!-- Soft Skills -->
-          <div class="section">
-            <div class="section-title">Soft Skills</div>
-            <div class="interest-item"><span class="interest-icon">✓</span> Analytisches Denken</div>
-            <div class="interest-item"><span class="interest-icon">✓</span> Teamfähigkeit</div>
-            <div class="interest-item"><span class="interest-icon">✓</span> Eigeninitiative</div>
-            <div class="interest-item"><span class="interest-icon">✓</span> Zuverlässigkeit</div>
-            <div class="interest-item"><span class="interest-icon">✓</span> Lernbereitschaft</div>
-          </div>
-
-          <!-- Interests -->
-          <div class="section">
-            <div class="section-title">Interessen</div>
-            <div class="interest-item"><span class="interest-icon">⚽</span>Fußball (Spieler &amp; Fan)</div>
-            <div class="interest-item"><span class="interest-icon">🏋️</span>Krafttraining &amp; Joggen</div>
-            <div class="interest-item"><span class="interest-icon">🎸</span>Gitarre (seit 10 Jahren)</div>
-            <div class="interest-item"><span class="interest-icon">🔬</span>Naturwissenschaften &amp; KI</div>
-          </div>
-
         </div>
-
-        <!-- MAIN -->
-        <div class="main">
-
-          <!-- Education -->
-          <div class="section">
-            <div class="section-title">Bildungsweg</div>
-
-            <div class="entry">
-              <div class="entry-header">
-                <div class="entry-title">M.Sc. Robotics, Cognition, Intelligence</div>
-                <div class="entry-date">Okt 2023 – heute</div>
-              </div>
-              <div class="entry-org">Technische Universität München (TUM)</div>
-              <div class="entry-desc">
-                <ul>
-                  <li>Schwerpunkte: Maschinelles Lernen, Generative Modelle, Inferenzzeitoptimierung</li>
-                  <li>Auslandssemester an der Chalmers University of Technology, Göteborg (Schweden)</li>
-                </ul>
-              </div>
-              <div class="entry-desc" style="margin-top:4px;">Aktueller Notendurchschnitt: <strong>1,4</strong></div>
-              <span class="tag">Laufend</span>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="entry">
-              <div class="entry-header">
-                <div class="entry-title">B.Sc. Elektro- und Informationstechnik</div>
-                <div class="entry-date">Okt 2020 – Sep 2023</div>
-              </div>
-              <div class="entry-org">Technische Universität München (TUM)</div>
-              <div class="entry-desc">
-                <ul>
-                  <li>Schwerpunkte: Künstliche Intelligenz und Machine Learning (ab 5. Semester)</li>
-                  <li>Abschlussnote: 2,5</li>
-                </ul>
-              </div>
-            </div>
-
-
-
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">Praktikum – KI in der industriellen Produktion</div>
+            <div class="entry-date">2023</div>
           </div>
-
-          <!-- Work -->
-          <div class="section">
-            <div class="section-title">Berufserfahrung</div>
-
-            <div class="entry">
-              <div class="entry-header">
-                <div class="entry-title">Wissenschaftliche Hilfskraft (HiWi)</div>
-                <div class="entry-date">Mär 2026 – Sep 2026</div>
-              </div>
-              <div class="entry-org">Lehrstuhl für Computer Vision &amp; Artificial Intelligence (CVAI), TU München &mdash; Prof. Daniel Cremers</div>
-              <div class="entry-desc">
-                Wissenschaftliche Mitarbeit an demselben Lehrstuhl, an dem ich meine Masterarbeit schreibe und an dem die ICLR-2026-Publikation entstanden ist. Themen: Generative Modelle, Inferenzzeitoptimierung.
-              </div>
-              <span class="tag">Aktuell</span>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="entry">
-              <div class="entry-header">
-                <div class="entry-title">Praktikum – KI in der industriellen Produktion</div>
-                <div class="entry-date">2023</div>
-              </div>
-              <div class="entry-org">Siemens AG</div>
-              <div class="entry-desc">
-                Entwicklung eines <strong>3D-Feature-Matching-Systems</strong> mittels CNN-Embeddings zur automatisierten Bauteilsuche in Fertigungsdatenbanken.
-              </div>
-            </div>
-
-
+          <div class="entry-org">Siemens AG</div>
+          <div class="entry-desc">
+            Entwicklung eines 3D-Feature-Matching-Systems mittels CNN-Embeddings zur automatisierten Bauteilsuche in Fertigungsdatenbanken.
           </div>
-
-          <!-- Publications -->
-          <div class="section">
-            <div class="section-title">Publikationen</div>
-            <div class="pub-entry">
-              <strong>Schweiger, N.</strong>, Ram, K., &amp; Cremers, D. (2026).<br />
-              Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models.<br />
-              <span class="pub-venue">ReALM-GEN Workshop @ ICLR 2026</span>, Rio de Janeiro, Brasilien.
-            </div>
-          </div>
-
-          <!-- Awards -->
-          <div class="section">
-            <div class="section-title">Auszeichnungen</div>
-            <div class="entry">
-              <div class="entry-header">
-                <div class="entry-title">2. Platz – TUM.ai Makeathon &nbsp;<span style="font-weight:400;color:var(--gray-500);font-size:9pt;">April 2023 · 2.000 € Preisgeld</span></div>
-                <div class="entry-date">Apr 2023</div>
-              </div>
-              <div class="entry-desc">
-                Entwicklung von <em>Caire</em>, einer App zur Überwindung von Sprachbarrieren zwischen Pflegepersonal und Patienten. Mittels KI werden medizinisch relevante Informationen aus natürlicher Sprache extrahiert und automatisch strukturierte Arztberichte generiert.
-              </div>
-              <span class="award-badge">🥈 2. Platz · 2.000 €</span>
-            </div>
-          </div>
-
         </div>
       </div>
+
+      <div class="section">
+        <div class="section-title">Publikationen</div>
+        <div class="pub-item">
+          <span class="pub-authors"><strong>Schweiger, N.</strong>, Ram, K., & Cremers, D. (2026).</span>
+          <span class="pub-title">Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models.</span>
+          <span class="pub-venue">ReALM-GEN Workshop @ ICLR 2026, Rio de Janeiro, Brasilien.</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Auszeichnungen</div>
+        <div class="entry">
+          <div class="entry-header">
+            <div class="entry-title">2. Platz – TUM.ai Makeathon (2.000 € Preisgeld)</div>
+            <div class="entry-date">Apr 2023</div>
+          </div>
+          <div class="entry-desc">
+            Entwicklung von <em>Caire</em>, einer KI-basierten App zur Überwindung von Sprachbarrieren, die medizinische Informationen aus Sprache extrahiert.
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Kenntnisse & Interessen</div>
+        <dl class="grid-list">
+          <dt>Programmierung</dt>
+          <dd>Python (Sehr gut), PyTorch (Sehr gut), C/C++ (Gut), Matlab (Gut), LaTeX</dd>
+          <dt>Sprachen</dt>
+          <dd>Deutsch (Muttersprache), Englisch (C1)</dd>
+          <dt>Interessen</dt>
+          <dd>Fußball, Krafttraining & Joggen, Gitarre (seit 10 Jahren), KI & Naturwissenschaften</dd>
+        </dl>
+      </div>
+
     </div>
   </body>
 </html>
