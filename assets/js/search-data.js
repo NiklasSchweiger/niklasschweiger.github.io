@@ -74,7 +74,7 @@ ninja.data = [{
               window.location.href = "/projects/caire/";
             },},{id: "projects-trust-region-noise-search-trs",
           title: 'Trust-Region Noise Search (TRS)',
-          description: "Publication · Black-box alignment for diffusion and flow models.Niklas Schweiger, K. Ram, Daniel CremersAccepted @ ReALM-GEN Workshop, ICLR 2026.",
+          description: "Publication · Black-box alignment for diffusion and flow models.Niklas Schweiger, K. Ram, Daniel CremersAccepted @ ReALM-GEN Workshop, ICLR 2026.We propose a simple trust-region based search algorithm (TRS) which treats the pre-trained generative and reward models as black-boxes, only optimizing the source noise to achieve reward-agnostic alignment.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/trs/";
             },},{id: "teachings-data-science-fundamentals",
