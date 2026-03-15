@@ -31,11 +31,8 @@ I completed my Bachelor's degree in **Electrical Engineering and Information Tec
 
 Before my Master's, I interned at **Siemens AG**, applying AI methods to industrial production settings — a hands-on experience that continues to shape how I think about real-world ML deployment.
 
-## Research Focus
-
-My current research focuses on **black-box inference-time alignment** of generative models. Our paper *Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models* was accepted at the [ReALM-GEN Workshop @ ICLR 2026](https://realm-gen-workshop.github.io/). We propose a simple trust-region search algorithm that treats the generative model as a black-box and optimizes only the source noise — making it applicable to expensive, imperfect, or non-differentiable reward functions across text-to-image, molecule, and protein design tasks.
 
 ## Awards
 
 🥈 **2nd Place – TUM.ai Makeathon** (April 2023) · *€2,000 prize*  
-Built *Caire*, an app designed to overcome language barriers between nurses and patients. Using AI, it extracts medically relevant information from natural speech and automatically generates structured medical reports. [Check out the project page!](/projects/caire/)
+Built *Caire*, an app designed to overcome language barriers between nurses and patients. Using AI, it extracts medically relevant information from natural speech and automatically generates structured medical reports. [See more](/projects/caire/)

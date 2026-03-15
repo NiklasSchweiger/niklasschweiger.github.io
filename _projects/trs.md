@@ -5,6 +5,7 @@ description: Black-box alignment for diffusion and flow models. Accepted @ ReALM
 img: assets/img/Teaser_Figure.jpg
 importance: 2
 category: research
+redirect: https://niklasschweiger.github.io/trust-region-noise-search/
 ---
 
 <div class="row">
