@@ -67,14 +67,14 @@ ninja.data = [{
             },},{id: "news-our-paper-trust-region-noise-search-for-black-box-alignment-of-diffusion-and-flow-models-was-accepted-at-the-realm-gen-workshop-iclr-2026",
           title: 'Our paper Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models...',
           description: "",
-          section: "News",},{id: "projects-caire",
-          title: 'Caire',
-          description: "Award · Overcoming language barriers in healthcare with AI-powered reporting. 🥈 2nd Place at TUM.ai Makeathon.",
+          section: "News",},{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/caire/";
             },},{id: "projects-trust-region-noise-search-trs",
           title: 'Trust-Region Noise Search (TRS)',
-          description: "Publication · Black-box alignment for diffusion and flow models. Accepted @ ReALM-GEN Workshop, ICLR 2026.",
+          description: "Publication · Black-box alignment for diffusion and flow models.Niklas Schweiger, K. Ram, Daniel CremersAccepted @ ReALM-GEN Workshop, ICLR 2026.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/trs/";
             },},{id: "teachings-data-science-fundamentals",
