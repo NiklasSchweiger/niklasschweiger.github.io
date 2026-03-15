@@ -67,9 +67,9 @@ ninja.data = [{
             },},{id: "news-our-paper-trust-region-noise-search-for-black-box-alignment-of-diffusion-and-flow-models-was-accepted-at-the-realm-gen-workshop-iclr-2026",
           title: 'Our paper Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models...',
           description: "",
-          section: "News",},{id: "projects-",
-          title: '',
-          description: "",
+          section: "News",},{id: "projects-caire",
+          title: 'Caire',
+          description: "Award · Overcoming language barriers in healthcare with AI-powered reporting.Team: Enough Slices🥈 2nd Place at TUM.ai Makeathon (April 2023).Caire is an AI-powered assistant designed to automate medical reporting. By utilizing real-time speech-to-text and a fine-tuned LLM, it extracts medically relevant information and instantly generates structured reports.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/caire/";
             },},{id: "projects-trust-region-noise-search-trs",
@@ -107,6 +107,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/niklas-schweiger-15b799274", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=Gxkh5r8AAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
