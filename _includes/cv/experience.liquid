@@ -46,6 +46,13 @@
                   </td>
                 </tr>
               {% endif %}
+              {% if entry.logo %}
+                <tr>
+                  <td class="text-center" style="padding-top: 0.5rem;">
+                    <img src="{{ entry.logo }}" alt="logo" style="width: 50px; height: 50px; object-fit: contain;">
+                  </td>
+                </tr>
+              {% endif %}
             </tbody>
           </table>
         </div>
@@ -63,9 +70,7 @@
           {% endif %}
 
           {% capture cv_icon %}
-            {% if entry.logo %}
-              <img src="{{ entry.logo }}" alt="logo" style="width: auto; height: 24px; max-width: 60px; object-fit: contain; margin-right: 8px; vertical-align: middle;">
-            {% elsif entry.icon %}
+            {% if entry.icon %}
               <i class="{{ entry.icon }}" style="margin-right: 5px;"></i>
             {% endif %}
           {% endcapture %}
