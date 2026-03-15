@@ -31,7 +31,6 @@ I completed my Bachelor's degree in **Electrical Engineering and Information Tec
 
 Before my Master's, I interned at **Siemens AG**, applying AI methods to industrial production settings — a hands-on experience that continues to shape how I think about real-world ML deployment.
 
-
 ## Projects
 
 <div class="projects">

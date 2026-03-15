@@ -70,7 +70,13 @@ layout: default
         <div class="contact-icons">
           {% social_links %}
           {% if site.scholar_userid %}
-            <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" title="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
+            <a
+              href="https://scholar.google.com/citations?user={{ site.scholar_userid }}"
+              title="Google Scholar"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="ai ai-google-scholar"></i
+            ></a>
           {% endif %}
         </div>
         <div class="contact-note">{{ site.contact_note }}</div>

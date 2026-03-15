@@ -17,10 +17,13 @@ category: work
 </div>
 
 ## The Problem
+
 In modern healthcare, nurses spend a significant portion of their shifts on manual documentation rather than patient care. This problem is exacerbated when language barriers exist between the patient and the nursing staff, leading to potentially critical information gaps and increased administrative burden.
 
 ## Our Solution: Caire
+
 Caire is an AI-powered assistant designed to automate medical reporting. The app follows a simple yet powerful pipeline:
+
 1. **Speech-to-Text**: Using OpenAI's Whisper, we transcribe medical consultations or patient check-ins in real-time.
 2. **Entity Extraction**: A fine-tuned LLM parses the transcript to extract medically relevant information (symptoms, medication, patient history).
 3. **Structured Reporting**: The system automatically generates a structured medical report in the patient's and hospital's primary languages.
@@ -35,6 +38,7 @@ Caire is an AI-powered assistant designed to automate medical reporting. The app
 </div>
 
 ## Success at TUM.ai Makeathon
+
 Out of dozens of participating teams, **Caire** was awarded **2nd Place** in the overall competition. The judges highlighted the feasibility of the solution and the immediately addressable market of hospital administrative efficiency.
 
 - **Award**: 🥈 2nd Place Overall

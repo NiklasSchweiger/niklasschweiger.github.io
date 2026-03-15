@@ -18,11 +18,13 @@ redirect: https://niklasschweiger.github.io/trust-region-noise-search/
 </div>
 
 ## Abstract
-Aligning generative models (like Diffusion or Flow models) with specific user preferences often requires differentiable reward functions or expensive fine-tuning. We propose **Trust-Region Noise Search (TRS)**, a simple yet effective black-box alignment algorithm. 
+
+Aligning generative models (like Diffusion or Flow models) with specific user preferences often requires differentiable reward functions or expensive fine-tuning. We propose **Trust-Region Noise Search (TRS)**, a simple yet effective black-box alignment algorithm.
 
 TRS treats the generative model and the reward function as completely opaque. Instead of updating model weights, it optimizes the source noise (the latent space) using a trust-region search. This makes it applicable to non-differentiable rewards and avoids the catastrophic forgetting associated with full fine-tuning.
 
 ## Key Methodology
+
 The core idea of TRS is to iteratively explore the noise space $\mathbb{R}^M$ to find regions that map to samples with higher rewards.
 
 <div class="row justify-content-sm-center">
@@ -35,6 +37,7 @@ The core idea of TRS is to iteratively explore the noise space $\mathbb{R}^M$ to
 </div>
 
 ## Impact
+
 Our results demonstrate that TRS can steering models towards high-aesthetic scores in text-to-image tasks and optimal docking scores in molecule design—all without ever calculating a single gradient through the generative model itself.
 
 - **Status**: Accepted @ [ReALM-GEN Workshop @ ICLR 2026](https://realm-gen-workshop.github.io/) (Rio de Janeiro)
