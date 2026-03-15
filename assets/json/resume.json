@@ -105,7 +105,7 @@
       "title": "2nd Place – TUM.ai Makeathon (€2,000 prize)",
       "date": "2023-04-01",
       "awarder": "TUM.ai",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e6/TUM.ai_Logo_Blue_%26_Violet.svg",
+      "logo": "/assets/img/logos/tum-ai.png",
       "summary": "Built 'Caire', an app designed to overcome language barriers between nurses and patients. Using AI, it extracts medically relevant information from natural speech and automatically generates structured medical reports."
     }
   ],
@@ -115,7 +115,7 @@
       "publisher": "ReALM-GEN Workshop @ ICLR 2026",
       "releaseDate": "2026-03-01",
       "url": "",
-      "logo": "https://iclr.cc/static/core/img/ICLR-logo.svg",
+      "logo": "/assets/img/logos/iclr.svg",
       "summary": "We propose a simple trust-region based search algorithm (TRS) which treats the pre-trained generative and reward models as a black-box and only optimizes the source noise. Evaluated across text-to-image, molecule, and protein design tasks. ICLR 2026, Rio de Janeiro, Brazil."
     }
   ],
