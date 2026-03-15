@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Trust-Region Noise Search (TRS)
-description: Black-box alignment for diffusion and flow models. Accepted @ ReALM-GEN Workshop, ICLR 2026.
+description: <strong>Publication</strong> · Black-box alignment for diffusion and flow models. Accepted @ ReALM-GEN Workshop, ICLR 2026.
 img: assets/img/Teaser_Figure.jpg
-importance: 2
+importance: 1
 category: research
 redirect: https://niklasschweiger.github.io/trust-region-noise-search/
 ---

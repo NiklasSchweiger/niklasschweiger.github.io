@@ -13,7 +13,7 @@ profile:
     <p>Technical University of Munich (TUM)</p>
     <p>📧 niklas.schweiger@tum.de</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -32,18 +32,13 @@ I completed my Bachelor's degree in **Electrical Engineering and Information Tec
 Before my Master's, I interned at **Siemens AG**, applying AI methods to industrial production settings — a hands-on experience that continues to shape how I think about real-world ML deployment.
 
 
-## Awards
-
-🥈 **2nd Place – TUM.ai Makeathon** (April 2023) · *€2,000 prize*  
-Built *Caire*, an app designed to overcome language barriers between nurses and patients. Using AI, it extracts medically relevant information from natural speech and automatically generates structured medical reports. [See more](/projects/caire/)
-
 ## Projects
 
 <div class="projects">
-  <div class="row row-cols-1 row-cols-md-2">
+  <div class="row row-cols-1">
     {% assign sorted_projects = site.projects | sort: "importance" %}
     {% for project in sorted_projects %}
-      {% include projects.liquid %}
+      {% include projects_horizontal.liquid %}
     {% endfor %}
   </div>
 </div>
