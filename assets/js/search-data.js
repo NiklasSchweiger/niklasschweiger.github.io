@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Download my CV as PDF: 🇬🇧 English &amp;nbsp;|&amp;nbsp; 🇩🇪 Deutsch &amp;nbsp;(open link → File → Print → Save as PDF)",
+          description: "Download my CV as PDF: 🇬🇧 English &amp;nbsp;|&amp;nbsp; 🇩🇪 Deutsch",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
