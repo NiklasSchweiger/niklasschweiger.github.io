@@ -3,11 +3,11 @@
     <div class="card h-100 hoverable">
       <div class="row no-gutters align-items-center">
         {% if project.img %}
-          <div class="col-sm-4 p-3 text-center">
+          <div class="col-5 p-3 text-center">
             {% include figure.liquid loading="eager" path=project.img alt="project thumbnail" class="card-img" style="max-height: 200px; width: auto; object-fit: contain;" %}
           </div>
         {% endif %}
-        <div class="{% if project.img %}col-sm-8{% else %}col-sm-12{% endif %}">
+        <div class="{% if project.img %}col-7{% else %}col-12{% endif %}">
           <div class="card-body">
             <h4 class="card-title font-weight-bold" style="font-size: 1.25rem;">{{ project.title }}</h4>
             <p class="card-text">{{ project.description }}</p>
