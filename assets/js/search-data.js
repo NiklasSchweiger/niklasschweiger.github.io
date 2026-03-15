@@ -69,12 +69,12 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-caire",
           title: 'Caire',
-          description: "Overcoming language barriers in healthcare with AI-powered reporting. 🥈 2nd Place at TUM.ai Makeathon.",
+          description: "Award · Overcoming language barriers in healthcare with AI-powered reporting. 🥈 2nd Place at TUM.ai Makeathon.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/caire/";
             },},{id: "projects-trust-region-noise-search-trs",
           title: 'Trust-Region Noise Search (TRS)',
-          description: "Black-box alignment for diffusion and flow models. Accepted @ ReALM-GEN Workshop, ICLR 2026.",
+          description: "Publication · Black-box alignment for diffusion and flow models. Accepted @ ReALM-GEN Workshop, ICLR 2026.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/trs/";
             },},{id: "teachings-data-science-fundamentals",
