@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
@@ -6,8 +6,11 @@
     <title>Niklas Schweiger – Lebenslauf</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <style>
       :root {
         --text-main: #111827;
@@ -15,17 +18,26 @@
         --accent: #2563eb;
         --border: #e5e7eb;
       }
-      * { box-sizing: border-box; margin: 0; padding: 0; }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         color: var(--text-main);
         background: #f3f4f6;
         line-height: 1.35;
         font-size: 9.5pt;
       }
-      a { color: var(--accent); text-decoration: none; }
-      a:hover { text-decoration: underline; }
-      
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
       .page {
         width: 210mm;
         min-height: 297mm;
@@ -44,7 +56,9 @@
         padding-bottom: 0.8rem;
         margin-bottom: 1rem;
       }
-      .header-info { flex: 1; }
+      .header-info {
+        flex: 1;
+      }
       .name {
         font-size: 26pt;
         font-weight: 700;
@@ -65,8 +79,12 @@
         font-size: 8.5pt;
         color: var(--text-muted);
       }
-      .contact-info > div { display: flex; align-items: center; gap: 0.3rem; }
-      
+      .contact-info > div {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+      }
+
       .header-photo {
         width: 100px;
         height: 100px;
@@ -76,7 +94,9 @@
       }
 
       /* Sections */
-      .section { margin-bottom: 0.8rem; }
+      .section {
+        margin-bottom: 0.8rem;
+      }
       .section-title {
         font-size: 12pt;
         font-weight: 600;
@@ -89,19 +109,42 @@
       }
 
       /* Entries */
-      .entry { margin-bottom: 0.6rem; page-break-inside: avoid; }
+      .entry {
+        margin-bottom: 0.6rem;
+        page-break-inside: avoid;
+      }
       .entry-header {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         margin-bottom: 0.1rem;
       }
-      .entry-title { font-weight: 600; font-size: 10.5pt; }
-      .entry-date { font-size: 9pt; color: var(--text-muted); font-weight: 500; }
-      .entry-org { font-style: italic; color: var(--text-main); font-size: 9.5pt; margin-bottom: 0.2rem; }
-      .entry-desc { font-size: 9pt; color: var(--text-muted); }
-      .entry-desc ul { margin-left: 1.2rem; margin-top: 0.3rem; }
-      .entry-desc li { margin-bottom: 0.2rem; }
+      .entry-title {
+        font-weight: 600;
+        font-size: 10.5pt;
+      }
+      .entry-date {
+        font-size: 9pt;
+        color: var(--text-muted);
+        font-weight: 500;
+      }
+      .entry-org {
+        font-style: italic;
+        color: var(--text-main);
+        font-size: 9.5pt;
+        margin-bottom: 0.2rem;
+      }
+      .entry-desc {
+        font-size: 9pt;
+        color: var(--text-muted);
+      }
+      .entry-desc ul {
+        margin-left: 1.2rem;
+        margin-top: 0.3rem;
+      }
+      .entry-desc li {
+        margin-bottom: 0.2rem;
+      }
 
       /* Two column lists for skills etc */
       .grid-list {
@@ -110,14 +153,30 @@
         gap: 0.5rem 1rem;
         font-size: 9.5pt;
       }
-      .grid-list dt { font-weight: 600; color: var(--text-main); }
-      .grid-list dd { color: var(--text-muted); margin: 0; }
+      .grid-list dt {
+        font-weight: 600;
+        color: var(--text-main);
+      }
+      .grid-list dd {
+        color: var(--text-muted);
+        margin: 0;
+      }
 
       /* Publications */
-      .pub-item { margin-bottom: 0.5rem; font-size: 9.5pt; }
-      .pub-authors { color: var(--text-main); }
-      .pub-title { font-weight: 600; }
-      .pub-venue { font-style: italic; color: var(--text-muted); }
+      .pub-item {
+        margin-bottom: 0.5rem;
+        font-size: 9.5pt;
+      }
+      .pub-authors {
+        color: var(--text-main);
+      }
+      .pub-title {
+        font-weight: 600;
+      }
+      .pub-venue {
+        font-style: italic;
+        color: var(--text-muted);
+      }
 
       /* Summary */
       .summary {
@@ -129,9 +188,19 @@
       }
 
       @media print {
-        body { background: none; }
-        .page { margin: 0; padding: 0; box-shadow: none; width: 100%; }
-        a { color: var(--text-main); text-decoration: none; }
+        body {
+          background: none;
+        }
+        .page {
+          margin: 0;
+          padding: 0;
+          box-shadow: none;
+          width: 100%;
+        }
+        a {
+          color: var(--text-main);
+          text-decoration: none;
+        }
       }
     </style>
   </head>
@@ -154,7 +223,9 @@
       </div>
 
       <div class="summary">
-        Master-Student an der TU München mit Fokus auf generative Modelle, Inference-Time Alignment und Computer Vision. Erfahrung in der Entwicklung neuartiger Algorithmen für Diffusions- und Flow-Modelle (Publikation auf der ICLR '26). Fokussiert auf robuste, belohnungsagnostische Ansätze für komplexe KI-Systeme.
+        Master-Student an der TU München mit Fokus auf generative Modelle, Inference-Time Alignment und Computer Vision. Erfahrung in der Entwicklung
+        neuartiger Algorithmen für Diffusions- und Flow-Modelle (Publikation auf der ICLR '26). Fokussiert auf robuste, belohnungsagnostische Ansätze
+        für komplexe KI-Systeme.
       </div>
 
       <div class="section">
@@ -197,7 +268,8 @@
           </div>
           <div class="entry-org">Lehrstuhl für Computer Vision & Artificial Intelligence (CVAI), TU München</div>
           <div class="entry-desc">
-            Mitarbeit in der Forschungsgruppe von Prof. Daniel Cremers, in der auch meine Masterarbeit und die ICLR-2026-Publikation entstanden sind. Fokus auf generative Modelle und Computer Vision.
+            Mitarbeit in der Forschungsgruppe von Prof. Daniel Cremers, in der auch meine Masterarbeit und die ICLR-2026-Publikation entstanden sind.
+            Fokus auf generative Modelle und Computer Vision.
           </div>
         </div>
         <div class="entry">
@@ -229,7 +301,8 @@
             <div class="entry-date">Apr 2023</div>
           </div>
           <div class="entry-desc">
-            Entwicklung von <em>Caire</em>, einer KI-basierten App zur Überwindung von Sprachbarrieren, die medizinische Informationen aus Sprache extrahiert.
+            Entwicklung von <em>Caire</em>, einer KI-basierten App zur Überwindung von Sprachbarrieren, die medizinische Informationen aus Sprache
+            extrahiert.
           </div>
         </div>
       </div>
@@ -245,7 +318,6 @@
           <dd>Fußball, Krafttraining & Joggen, Gitarre (seit 10 Jahren), KI & Naturwissenschaften</dd>
         </dl>
       </div>
-
     </div>
   </body>
 </html>
