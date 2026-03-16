@@ -105,7 +105,7 @@
       "name": "Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models",
       "publisher": "ReALM-GEN Workshop @ ICLR 2026",
       "releaseDate": "2026-03-01",
-      "url": "",
+      "url": "https://niklasschweiger.github.io/trust-region-noise-search/static/pdfs/paper.pdf",
       "logo": "/assets/img/logos/iclr.svg",
       "summary": "We propose a simple trust-region based search algorithm (TRS) which treats the pre-trained generative and reward models as a black-box and only optimizes the source noise. Evaluated across text-to-image, molecule, and protein design tasks. ICLR 2026, Rio de Janeiro, Brazil."
     }

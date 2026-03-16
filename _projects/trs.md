@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Trust-Region Noise Search (TRS)
-description: "<strong>Publication</strong> · Black-box alignment for diffusion and flow models.<br>Niklas Schweiger, K. Ram, Daniel Cremers<br>Accepted @ <a href='https://realm-gen-workshop.github.io/' target='_blank'>ReALM-GEN Workshop, ICLR 2026</a>.<br><br>We propose a simple trust-region based search algorithm (TRS) which treats the pre-trained generative and reward models as black-boxes, only optimizing the source noise to achieve reward-agnostic alignment."
+description: "<strong>Publication</strong> · Black-box alignment for diffusion and flow models.<br>Niklas Schweiger, K. Ram, Daniel Cremers<br>Accepted @ <a href='https://realm-gen-workshop.github.io/' target='_blank'>ReALM-GEN Workshop, ICLR 2026</a>.<br>📄 <a href='https://niklasschweiger.github.io/trust-region-noise-search/static/pdfs/paper.pdf' target='_blank'>Download Paper</a><br><br>We propose a simple trust-region based search algorithm (TRS) which treats the pre-trained generative and reward models as black-boxes, only optimizing the source noise to achieve reward-agnostic alignment."
 img: assets/img/Teaser_Figure.jpg
 importance: 1
 category: research
@@ -40,6 +40,6 @@ The core idea of TRS is to iteratively explore the noise space $\mathbb{R}^M$ to
 
 Our results demonstrate that TRS can steering models towards high-aesthetic scores in text-to-image tasks and optimal docking scores in molecule design—all without ever calculating a single gradient through the generative model itself.
 
-- **Status**: Accepted @ [ReALM-GEN Workshop @ ICLR 2026](https://realm-gen-workshop.github.io/) (Rio de Janeiro)
+- **Status**: [Download Paper PDF](https://niklasschweiger.github.io/trust-region-noise-search/static/pdfs/paper.pdf) · Accepted @ [ReALM-GEN Workshop @ ICLR 2026](https://realm-gen-workshop.github.io/) (Rio de Janeiro)
 - **Collaborators**: K. Ram, Prof. Daniel Cremers
 - **Focus**: High-efficiency alignment, non-differentiable rewards, black-box optimization.
