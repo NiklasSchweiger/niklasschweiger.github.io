@@ -5,7 +5,7 @@
     "image": "863a9578-6ef9-4fa3-bee0-6203a62e9691.jpg",
     "email": "niklas.schweiger@tum.de",
     "url": "https://niklasschweiger.github.io",
-    "summary": "Master's student at TU Munich specializing in machine learning, generative models, and inference-time alignment. Passionate about reward-agnostic approaches to steer diffusion and flow models. Former exchange student at Chalmers University of Technology, Sweden.",
+    "summary": "Master's student at TU Munich specializing in machine learning, generative models, and inference-time alignment. Currently a research assistant in Prof. Daniel Cremers' Computer Vision & AI group, working on reward-agnostic methods to steer diffusion and flow models at inference time.",
     "location": {
       "city": "Munich",
       "countryCode": "DE",
@@ -34,7 +34,7 @@
       "startDate": "2026-03-01",
       "endDate": "",
       "summary": "Student research assistant at Prof. Daniel Cremers' group — the same lab where I am writing my Master's thesis and where the ICLR 2026 paper was produced. Research spans generative models and inference-time alignment.",
-      "highlights": ["Research in generative models and inference-time optimization", "Same group as ICLR 2026 paper and Master's thesis"]
+      "highlights": ["Research on inference-time alignment of diffusion and flow models", "Contributed to ICLR 2026 workshop paper on trust-region noise optimization"]
     },
     {
       "name": "Siemens AG",

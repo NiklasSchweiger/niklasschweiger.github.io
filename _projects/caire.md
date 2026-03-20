@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Caire
-description: "<strong>Award</strong> · Overcoming language barriers in healthcare with AI-powered reporting.<br>Team: <i>Enough Slices</i><br>🥈 2nd Place at <a href='https://www.tum-ai.com/makeathon' target='_blank'>TUM.ai Makeathon</a> (April 2023).<br><br>Caire is an AI-powered assistant designed to automate medical reporting. By utilizing real-time speech-to-text and a fine-tuned LLM, it extracts medically relevant information and instantly generates structured reports."
+description: "<strong>Award</strong> · Overcoming language barriers in healthcare with AI-powered reporting.<br>Team: <i>Enough Slices</i><br>🥈 2nd Place at <a href='https://www.tum-ai.com/makeathon' target='_blank'>TUM.ai Makeathon</a> (April 2023).<br><br>Caire is an AI-powered assistant designed to automate medical reporting. Using real-time speech-to-text and a fine-tuned LLM, it extracts medically relevant information and generates structured reports."
 img: assets/img/3b3bbfc9-a18a-4dc5-b57d-34289fa3080a.jpg
 importance: 2
 category: work
@@ -39,7 +39,7 @@ Caire is an AI-powered assistant designed to automate medical reporting. The app
 
 ## Success at TUM.ai Makeathon
 
-Out of dozens of participating teams, **Caire** was awarded **2nd Place** in the overall competition. The judges highlighted the feasibility of the solution and the immediately addressable market of hospital administrative efficiency.
+Out of dozens of participating teams, **Caire** was awarded **2nd Place** in the overall competition. The judges highlighted the solution's feasibility and its potential for immediate impact in hospital workflows.
 
 - **Award**: 🥈 2nd Place Overall
 - **Prize**: €2,000

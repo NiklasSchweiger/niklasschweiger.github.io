@@ -9,8 +9,8 @@ profile:
   image: 863a9578-6ef9-4fa3-bee0-6203a62e9691.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>MSc Robotics, Cognition, Intelligence</p>
-    <p>Technical University of Munich (TUM)</p>
+    <p>Research Assistant @ CVAI Lab</p>
+    <p>Prof. Daniel Cremers' Group, TUM</p>
     <p>📧 niklas.schweiger@tum.de</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -25,11 +25,9 @@ latest_posts:
   enabled: false
 ---
 
-Hi! I am a Master's student in **Robotics, Cognition, Intelligence** at the [Technical University of Munich (TUM)](https://www.tum.de). My research interests lie at the intersection of **machine learning, generative models, and inference-time alignment** — particularly in finding efficient, reward-agnostic ways to steer diffusion and flow models towards desired outcomes.
+Hi! I'm a Master's student in **Robotics, Cognition, Intelligence** at the [Technical University of Munich (TUM)](https://www.tum.de). I work on **machine learning, generative models, and inference-time alignment** — specifically on efficient, reward-agnostic methods to steer diffusion and flow models without fine-tuning or differentiable rewards.
 
-I completed my Bachelor's degree in **Electrical Engineering and Information Technology** at TUM, where I discovered my passion for AI and machine learning in my later semesters. During my Master's, I spent an enriching exchange semester at [Chalmers University of Technology](https://www.chalmers.se) in Gothenburg, Sweden, broadening my academic and cultural horizons.
-
-Before my Master's, I interned at **Siemens AG**, applying AI methods to industrial production settings — a hands-on experience that continues to shape how I think about real-world ML deployment.
+I did my Bachelor's in **Electrical Engineering and Information Technology** at TUM and moved into AI and machine learning during my later semesters. Before starting my Master's, I interned at **Siemens AG**, where I applied ML to 3D part retrieval in industrial manufacturing. During my Master's, I spent an exchange semester at [Chalmers University of Technology](https://www.chalmers.se) in Gothenburg, Sweden.
 
 ## Projects
 
