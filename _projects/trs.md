@@ -29,7 +29,7 @@ The core idea of TRS is to iteratively explore the noise space $\mathbb{R}^M$ to
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/trs_method Kopie.jpg" title="TRS Methodology" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/trs_method_kopie.jpg" title="TRS Methodology" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -38,7 +38,7 @@ The core idea of TRS is to iteratively explore the noise space $\mathbb{R}^M$ to
 
 ## Impact
 
-Our results demonstrate that TRS can steering models towards high-aesthetic scores in text-to-image tasks and optimal docking scores in molecule design—all without ever calculating a single gradient through the generative model itself.
+Our results demonstrate that TRS can steer models towards high-aesthetic scores in text-to-image tasks and optimal docking scores in molecule design—all without ever calculating a single gradient through the generative model itself.
 
 - **Status**: [Download Paper PDF](https://niklasschweiger.github.io/trust-region-noise-search/static/pdfs/paper.pdf) · Accepted @ [ReALM-GEN Workshop @ ICLR 2026](https://realm-gen-workshop.github.io/) (Rio de Janeiro)
 - **Collaborators**: K. Ram, Prof. Daniel Cremers

@@ -30,7 +30,7 @@ Caire is an AI-powered assistant designed to automate medical reporting. The app
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/Bildschirmfoto 2023-05-05 um 18.47.30.jpg" title="Caire UI Mockups" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/caire-ui-mockups.jpg" title="Caire UI Mockups" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
