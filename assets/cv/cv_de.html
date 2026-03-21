@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
@@ -187,6 +187,9 @@
         text-align: justify;
       }
 
+      @page {
+        margin: 15mm;
+      }
       @media print {
         body {
           background: none;
@@ -201,6 +204,11 @@
           color: var(--text-main);
           text-decoration: none;
         }
+        a[href]:not([href^="mailto"])::after {
+          content: " (" attr(href) ")";
+          font-size: 7pt;
+          color: #666;
+        }
       }
     </style>
   </head>
@@ -209,9 +217,9 @@
       <div class="header">
         <div class="header-info">
           <div class="name">Niklas Schweiger</div>
-          <div class="title">KI & Machine Learning Researcher | M.Sc. Student der TU München</div>
+          <div class="title">M.Sc. Student & Wissenschaftliche Hilfskraft · TU München</div>
           <div class="contact-info">
-            <div><i class="fas fa-envelope"></i> <a href="mailto:niklasschweiger@tum.de">niklasschweiger@tum.de</a></div>
+            <div><i class="fas fa-envelope"></i> <a href="mailto:niklas.schweiger@tum.de">niklas.schweiger@tum.de</a></div>
             <div><i class="fas fa-map-marker-alt"></i> München, Deutschland</div>
             <div><i class="fab fa-github"></i> <a href="https://github.com/NiklasSchweiger">NiklasSchweiger</a></div>
             <div><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/niklas-schweiger-15b799274">niklas-schweiger</a></div>
@@ -223,9 +231,9 @@
       </div>
 
       <div class="summary">
-        Master-Student an der TU München mit Fokus auf generative Modelle, Inference-Time Alignment und Computer Vision. Erfahrung in der Entwicklung
-        neuartiger Algorithmen für Diffusions- und Flow-Modelle (Publikation auf der ICLR '26). Fokussiert auf robuste, belohnungsagnostische Ansätze
-        für komplexe KI-Systeme.
+        Master-Student an der TU München und wissenschaftliche Hilfskraft in der Forschungsgruppe von Prof. Daniel Cremers (CVAI). Schwerpunkt liegt
+        auf Inference-Time Alignment von Diffusions- und Flow-Modellen — insbesondere belohnungsagnostischen Methoden ohne Fine-Tuning oder
+        differenzierbare Belohnungsfunktionen. Erstautor eines Workshop-Beitrags auf der ICLR 2026.
       </div>
 
       <div class="section">
@@ -264,12 +272,12 @@
         <div class="entry">
           <div class="entry-header">
             <div class="entry-title">Wissenschaftliche Hilfskraft (HiWi)</div>
-            <div class="entry-date">Mär 2026 – Sep 2026</div>
+            <div class="entry-date">Mär 2026 – heute</div>
           </div>
           <div class="entry-org">Lehrstuhl für Computer Vision & Artificial Intelligence (CVAI), TU München</div>
           <div class="entry-desc">
-            Mitarbeit in der Forschungsgruppe von Prof. Daniel Cremers, in der auch meine Masterarbeit und die ICLR-2026-Publikation entstanden sind.
-            Fokus auf generative Modelle und Computer Vision.
+            Forschung zu Inference-Time Alignment von Diffusions- und Flow-Modellen in der Gruppe von Prof. Daniel Cremers. Beitrag zum
+            ICLR-2026-Workshop-Paper über Trust-Region-Noise-Optimierung. Parallel zur Masterarbeit im selben Lehrstuhl.
           </div>
         </div>
         <div class="entry">
