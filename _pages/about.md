@@ -25,7 +25,7 @@ latest_posts:
   enabled: false
 ---
 
-Hi! I'm a Master's student in **Robotics, Cognition, Intelligence** at the [Technical University of Munich (TUM)](https://www.tum.de). I work on **machine learning, generative models, and inference-time alignment** — specifically on efficient, reward-agnostic methods to steer diffusion and flow models without fine-tuning or differentiable rewards.
+Hi! I'm a Master's student in **Robotics, Cognition, Intelligence** at the [Technical University of Munich (TUM)](https://www.tum.de). I currently work on **machine learning, generative models, and inference-time alignment**.
 
 I did my Bachelor's in **Electrical Engineering and Information Technology** at TUM and moved into AI and machine learning during my later semesters. Before starting my Master's, I interned at **Siemens AG**, where I applied ML to 3D part retrieval in industrial manufacturing. During my Master's, I spent an exchange semester at [Chalmers University of Technology](https://www.chalmers.se) in Gothenburg, Sweden.
 
