@@ -34,7 +34,10 @@
       "startDate": "2026-03-01",
       "endDate": "",
       "summary": "Student research assistant at Prof. Daniel Cremers' group — the same lab where I am writing my Master's thesis and where the ICLR 2026 paper was produced. Research spans generative models and inference-time alignment.",
-      "highlights": ["Research on inference-time alignment of diffusion and flow models", "Contributed to ICLR 2026 workshop paper on trust-region noise optimization"]
+      "highlights": [
+        "Research on inference-time alignment of diffusion and flow models",
+        "Contributed to ICLR 2026 workshop paper on trust-region noise optimization"
+      ]
     },
     {
       "name": "Siemens AG",
