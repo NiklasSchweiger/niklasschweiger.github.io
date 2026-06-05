@@ -3,6 +3,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 CV_DIR="$ROOT/assets/cv"
+LOCAL_CV_DIR="${CV_LOCAL_DIR:-$ROOT/../cv}"
 
 find_chrome() {
   if [[ -x "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" ]]; then
@@ -20,11 +21,15 @@ find_chrome() {
 }
 
 CHROME="$(find_chrome)"
+mkdir -p "$LOCAL_CV_DIR"
 
 for lang in en de; do
   html="$CV_DIR/cv_${lang}.html"
   pdf="$CV_DIR/cv_${lang}.pdf"
+  local_pdf="$LOCAL_CV_DIR/cv_${lang}.pdf"
   "$CHROME" --headless --disable-gpu --no-pdf-header-footer \
     --print-to-pdf="$pdf" "file://${html}"
+  cp "$pdf" "$local_pdf"
   echo "Generated ${pdf}"
+  echo "Saved local copy to ${local_pdf}"
 done
