@@ -31,6 +31,9 @@ ninja.data = [{
             },},{id: "news-our-paper-trust-region-noise-search-for-black-box-alignment-of-diffusion-and-flow-models-was-accepted-at-the-realm-gen-workshop-iclr-2026",
           title: 'Our paper Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models...',
           description: "",
+          section: "News",},{id: "news-our-paper-trust-region-noise-search-for-black-box-alignment-of-diffusion-and-flow-models-was-accepted-to-eccv-2026-it-was-also-presented-at-the-realm-gen-workshop-iclr-2026",
+          title: 'Our paper Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models...',
+          description: "",
           section: "News",},{id: "projects-caire",
           title: 'Caire',
           description: "Award · Overcoming language barriers in healthcare with AI-powered reporting.Team: Enough Slices🥈 2nd Place at TUM.ai Makeathon (April 2023).Caire is an AI-powered assistant designed to automate medical reporting. Using real-time speech-to-text and a fine-tuned LLM, it extracts medically relevant information and generates structured reports.",
@@ -38,7 +41,7 @@ ninja.data = [{
               window.location.href = "/projects/caire/";
             },},{id: "projects-trust-region-noise-search-trs",
           title: 'Trust-Region Noise Search (TRS)',
-          description: "Publication · Black-box alignment for diffusion and flow models.Niklas Schweiger, K. Ram, Daniel CremersAccepted @ ReALM-GEN Workshop, ICLR 2026.📄 Download PaperWe propose a simple trust-region based search algorithm (TRS) which treats the pre-trained generative and reward models as black boxes, only optimizing the source noise to achieve reward-agnostic alignment.",
+          description: "Publication · Black-box alignment for diffusion and flow models.Niklas Schweiger, K. Ram, Daniel CremersAccepted to ECCV 2026. Also presented at ReALM-GEN Workshop, ICLR 2026.📄 Download PaperWe propose a simple trust-region based search algorithm (TRS) which treats the pre-trained generative and reward models as black boxes, only optimizing the source noise to achieve reward-agnostic alignment.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/trs/";
             },},{id: "teachings-data-science-fundamentals",

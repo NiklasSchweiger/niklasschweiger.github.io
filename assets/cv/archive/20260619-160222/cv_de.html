@@ -13,7 +13,6 @@
         --text-muted: #4b5563;
         --accent: #2563eb;
         --border: #e5e7eb;
-        --section-label: #374151;
       }
       * {
         box-sizing: border-box;
@@ -103,34 +102,23 @@
 
       /* Sections */
       .section {
-        display: grid;
-        grid-template-columns: 27mm 1fr;
-        column-gap: 5mm;
-        margin-bottom: 0.75rem;
-        page-break-inside: avoid;
+        margin-bottom: 0.8rem;
       }
       .section-title {
-        grid-column: 1;
-        grid-row: 1 / span 8;
-        font-size: 8.2pt;
-        font-weight: 700;
+        font-size: 12pt;
+        font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: var(--section-label);
-        padding-top: 0.12rem;
-        text-align: left;
-      }
-      .section > :not(.section-title) {
-        grid-column: 2;
+        letter-spacing: 0.05em;
+        color: var(--text-main);
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.1rem;
+        margin-bottom: 0.4rem;
       }
 
       /* Entries */
       .entry {
-        margin-bottom: 0.55rem;
+        margin-bottom: 0.6rem;
         page-break-inside: avoid;
-      }
-      .section > :last-child {
-        margin-bottom: 0;
       }
       .entry-header {
         display: flex;
@@ -201,13 +189,12 @@
       .summary {
         font-size: 9.5pt;
         color: var(--text-muted);
-        margin-bottom: 1rem;
+        margin-bottom: 1.2rem;
         line-height: 1.5;
         text-align: justify;
       }
 
       @page {
-        size: A4;
         margin: 15mm;
       }
       @media print {
@@ -289,7 +276,7 @@
       <div class="summary">
         Master-Student an der TU München und wissenschaftliche Hilfskraft in der Forschungsgruppe von Prof. Daniel Cremers (CVAI). Schwerpunkt liegt
         auf Inference-Time Alignment von Diffusions- und Flow-Modellen — insbesondere belohnungsagnostischen Methoden ohne Fine-Tuning oder
-        differenzierbare Belohnungsfunktionen. Erstautor eines für die ECCV 2026 angenommenen Papers.
+        differenzierbare Belohnungsfunktionen. Erstautor eines Workshop-Beitrags auf der ICLR 2026.
       </div>
 
       <div class="section">
@@ -324,7 +311,7 @@
       </div>
 
       <div class="section">
-        <div class="section-title">Erfahrung</div>
+        <div class="section-title">Berufserfahrung</div>
         <div class="entry">
           <div class="entry-header">
             <div class="entry-title">Wissenschaftliche Hilfskraft (HiWi)</div>
@@ -332,9 +319,8 @@
           </div>
           <div class="entry-org">Lehrstuhl für Computer Vision & Artificial Intelligence (CVAI), TU München</div>
           <div class="entry-desc">
-            Forschung zu Inference-Time Alignment von Diffusions- und Flow-Modellen in der Gruppe von Prof. Daniel Cremers. Erstautor eines
-            ECCV-2026-Papers über Trust-Region-Noise-Optimierung, auch vorgestellt beim ReALM-GEN Workshop @ ICLR 2026. Parallel zur Masterarbeit im
-            selben Lehrstuhl.
+            Forschung zu Inference-Time Alignment von Diffusions- und Flow-Modellen in der Gruppe von Prof. Daniel Cremers. Beitrag zum
+            ICLR-2026-Workshop-Paper über Trust-Region-Noise-Optimierung. Parallel zur Masterarbeit im selben Lehrstuhl.
           </div>
         </div>
         <div class="entry">
@@ -354,7 +340,7 @@
         <div class="pub-item">
           <span class="pub-authors"><strong>Schweiger, N.</strong>, Ram, K., & Cremers, D. (2026).</span>
           <span class="pub-title">Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models.</span>
-          <span class="pub-venue">European Conference on Computer Vision (ECCV), 2026. Auch vorgestellt beim ReALM-GEN Workshop @ ICLR 2026.</span>
+          <span class="pub-venue">ReALM-GEN Workshop @ ICLR 2026, Rio de Janeiro, Brasilien.</span>
         </div>
       </div>
 
