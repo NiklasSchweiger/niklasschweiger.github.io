@@ -33,10 +33,10 @@
       "url": "https://cvg.cit.tum.de",
       "startDate": "2026-03-01",
       "endDate": "",
-      "summary": "Student research assistant at Prof. Daniel Cremers' group — the same lab where I am writing my Master's thesis and where the ICLR 2026 paper was produced. Research spans generative models and inference-time alignment.",
+      "summary": "Student research assistant at Prof. Daniel Cremers' group — the same lab where I am writing my Master's thesis and where the ECCV 2026 paper was produced. Research spans generative models and inference-time alignment.",
       "highlights": [
         "Research on inference-time alignment of diffusion and flow models",
-        "Contributed to ICLR 2026 workshop paper on trust-region noise optimization"
+        "Contributed to ECCV 2026 paper on trust-region noise optimization"
       ]
     },
     {
@@ -106,11 +106,21 @@
   "publications": [
     {
       "name": "Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models",
-      "publisher": "ReALM-GEN Workshop @ ICLR 2026",
+      "publisher": "European Conference on Computer Vision (ECCV), 2026",
       "releaseDate": "2026-03-01",
       "url": "https://niklasschweiger.github.io/trust-region-noise-search/static/pdfs/paper.pdf",
       "logo": "/assets/img/logos/iclr.svg",
-      "summary": "We propose a simple trust-region based search algorithm (TRS) which treats the pre-trained generative and reward models as a black-box and only optimizes the source noise. Evaluated across text-to-image, molecule, and protein design tasks. ICLR 2026, Rio de Janeiro, Brazil."
+      "logos": [
+        {
+          "src": "/assets/img/logos/eccv-2026.svg",
+          "alt": "ECCV 2026 logo"
+        },
+        {
+          "src": "/assets/img/logos/iclr.svg",
+          "alt": "ICLR logo"
+        }
+      ],
+      "summary": "We propose a simple trust-region based search algorithm (TRS) which treats the pre-trained generative and reward models as a black-box and only optimizes the source noise. Evaluated across text-to-image, molecule, and protein design tasks. Accepted to ECCV 2026 and also presented at ReALM-GEN Workshop @ ICLR 2026."
     }
   ],
   "skills": [

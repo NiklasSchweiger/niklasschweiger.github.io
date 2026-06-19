@@ -7,8 +7,8 @@ nav_order: 5
 cv_format: jsonresume
 description: >
   Download my CV as PDF:
-  <a href="/assets/cv/cv_en.pdf" target="_blank">🇬🇧 English</a> &nbsp;|&nbsp;
-  <a href="/assets/cv/cv_de.pdf" target="_blank">🇩🇪 Deutsch</a>
+  <a href='/assets/cv/cv_en.pdf' target='_blank'>🇬🇧 English</a> &nbsp;|&nbsp;
+  <a href='/assets/cv/cv_de.pdf' target='_blank'>🇩🇪 Deutsch</a>
 toc:
   sidebar: left
 ---

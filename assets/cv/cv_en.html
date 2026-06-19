@@ -13,6 +13,7 @@
         --text-muted: #4b5563;
         --accent: #2563eb;
         --border: #e5e7eb;
+        --section-label: #374151;
       }
       * {
         box-sizing: border-box;
@@ -102,23 +103,34 @@
 
       /* Sections */
       .section {
-        margin-bottom: 0.8rem;
+        display: grid;
+        grid-template-columns: 27mm 1fr;
+        column-gap: 5mm;
+        margin-bottom: 0.75rem;
+        page-break-inside: avoid;
       }
       .section-title {
-        font-size: 12pt;
-        font-weight: 600;
+        grid-column: 1;
+        grid-row: 1 / span 8;
+        font-size: 8.2pt;
+        font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
-        color: var(--text-main);
-        border-bottom: 1px solid var(--border);
-        padding-bottom: 0.1rem;
-        margin-bottom: 0.4rem;
+        letter-spacing: 0.08em;
+        color: var(--section-label);
+        padding-top: 0.12rem;
+        text-align: left;
+      }
+      .section > :not(.section-title) {
+        grid-column: 2;
       }
 
       /* Entries */
       .entry {
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.55rem;
         page-break-inside: avoid;
+      }
+      .section > :last-child {
+        margin-bottom: 0;
       }
       .entry-header {
         display: flex;
@@ -189,12 +201,13 @@
       .summary {
         font-size: 9.5pt;
         color: var(--text-muted);
-        margin-bottom: 1.2rem;
+        margin-bottom: 1rem;
         line-height: 1.5;
         text-align: justify;
       }
 
       @page {
+        size: A4;
         margin: 15mm;
       }
       @media print {
@@ -275,7 +288,7 @@
 
       <div class="summary">
         Master's student at TU Munich and research assistant in Prof. Daniel Cremers' Computer Vision & AI group. Work focuses on inference-time
-        alignment of diffusion and flow models.
+        alignment of diffusion and flow models. First-author paper accepted to ECCV 2026.
       </div>
 
       <div class="section">
@@ -318,8 +331,8 @@
           </div>
           <div class="entry-org">Chair for Computer Vision & Artificial Intelligence (CVAI), TU Munich</div>
           <div class="entry-desc">
-            Research on inference-time alignment of diffusion and flow models in Prof. Daniel Cremers' group. Contributed to the ICLR 2026 workshop
-            paper on trust-region noise optimization. Concurrent with Master's thesis in the same group.
+            Research on inference-time alignment of diffusion and flow models in Prof. Daniel Cremers' group. First-author ECCV 2026 paper on
+            trust-region noise optimization, also presented at the ReALM-GEN Workshop @ ICLR 2026. Concurrent with Master's thesis in the same group.
           </div>
         </div>
         <div class="entry">
@@ -340,7 +353,7 @@
         <div class="pub-item">
           <span class="pub-authors"><strong>Schweiger, N.</strong>, Ram, K., & Cremers, D. (2026).</span>
           <span class="pub-title">Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models.</span>
-          <span class="pub-venue">ReALM-GEN Workshop @ ICLR 2026, Rio de Janeiro, Brazil.</span>
+          <span class="pub-venue">European Conference on Computer Vision (ECCV), 2026. Also presented at ReALM-GEN Workshop @ ICLR 2026.</span>
         </div>
       </div>
 

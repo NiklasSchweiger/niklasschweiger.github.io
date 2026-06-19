@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Niklas Schweiger – Lebenslauf</title>
+    <title>Niklas Schweiger – Curriculum Vitae</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -13,7 +13,6 @@
         --text-muted: #4b5563;
         --accent: #2563eb;
         --border: #e5e7eb;
-        --section-label: #374151;
       }
       * {
         box-sizing: border-box;
@@ -103,34 +102,23 @@
 
       /* Sections */
       .section {
-        display: grid;
-        grid-template-columns: 27mm 1fr;
-        column-gap: 5mm;
-        margin-bottom: 0.75rem;
-        page-break-inside: avoid;
+        margin-bottom: 0.8rem;
       }
       .section-title {
-        grid-column: 1;
-        grid-row: 1 / span 8;
-        font-size: 8.2pt;
-        font-weight: 700;
+        font-size: 12pt;
+        font-weight: 600;
         text-transform: uppercase;
-        letter-spacing: 0.08em;
-        color: var(--section-label);
-        padding-top: 0.12rem;
-        text-align: left;
-      }
-      .section > :not(.section-title) {
-        grid-column: 2;
+        letter-spacing: 0.05em;
+        color: var(--text-main);
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 0.1rem;
+        margin-bottom: 0.4rem;
       }
 
       /* Entries */
       .entry {
-        margin-bottom: 0.55rem;
+        margin-bottom: 0.6rem;
         page-break-inside: avoid;
-      }
-      .section > :last-child {
-        margin-bottom: 0;
       }
       .entry-header {
         display: flex;
@@ -201,7 +189,7 @@
       .summary {
         font-size: 9.5pt;
         color: var(--text-muted);
-        margin-bottom: 1rem;
+        margin-bottom: 1.2rem;
         line-height: 1.5;
         text-align: justify;
       }
@@ -233,7 +221,7 @@
       <div class="header">
         <div class="header-info">
           <div class="name">Niklas Schweiger</div>
-          <div class="title">M.Sc. Student & Wissenschaftliche Hilfskraft · TU München</div>
+          <div class="title">M.Sc. Student & Research Assistant · TU Munich</div>
           <div class="contact-info">
             <div>
               <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -247,7 +235,7 @@
               <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5z" />
               </svg>
-              München, Deutschland
+              Munich, Germany
             </div>
             <div>
               <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -271,7 +259,7 @@
                   d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM7 10.64l5 2.73 5-2.73v4.27l-5 2.73-5-2.73v-4.27z"
                 />
               </svg>
-              <a href="https://scholar.google.de/citations?user=Gxkh5r8AAAAJ&hl=de">Google Scholar</a>
+              <a href="https://scholar.google.com/citations?user=Gxkh5r8AAAAJ">Google Scholar</a>
             </div>
             <div>
               <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -287,100 +275,99 @@
       </div>
 
       <div class="summary">
-        Master-Student an der TU München und wissenschaftliche Hilfskraft in der Forschungsgruppe von Prof. Daniel Cremers (CVAI). Schwerpunkt liegt
-        auf Inference-Time Alignment von Diffusions- und Flow-Modellen — insbesondere belohnungsagnostischen Methoden ohne Fine-Tuning oder
-        differenzierbare Belohnungsfunktionen. Erstautor eines für die ECCV 2026 angenommenen Papers.
+        Master's student at TU Munich and research assistant in Prof. Daniel Cremers' Computer Vision & AI group. Work focuses on inference-time
+        alignment of diffusion and flow models.
       </div>
 
       <div class="section">
-        <div class="section-title">Bildungsweg</div>
+        <div class="section-title">Education</div>
         <div class="entry">
           <div class="entry-header">
             <div class="entry-title">M.Sc. Robotics, Cognition, Intelligence</div>
-            <div class="entry-date">Okt 2023 – heute</div>
+            <div class="entry-date">Oct 2023 – Present</div>
           </div>
-          <div class="entry-org">Technische Universität München (TUM)</div>
+          <div class="entry-org">Technical University of Munich (TUM), Germany</div>
           <div class="entry-desc">
             <ul>
-              <li><strong>Aktueller Schnitt:</strong> 1,4</li>
-              <li><strong>Schwerpunkt:</strong> Maschinelles Lernen, Generative Modelle, Inferenzzeit-Optimierung</li>
-              <li><strong>Auslandssemester:</strong> Chalmers University of Technology, Schweden (Sep 2024 – Jan 2025)</li>
+              <li><strong>Current GPA:</strong> 1.4 (German scale)</li>
+              <li><strong>Focus:</strong> Machine learning, generative models, inference-time optimization</li>
+              <li><strong>Exchange:</strong> Chalmers University of Technology, Gothenburg, Sweden (Sep 2024 – Jan 2025)</li>
             </ul>
           </div>
         </div>
         <div class="entry">
           <div class="entry-header">
-            <div class="entry-title">B.Sc. Elektro- und Informationstechnik</div>
-            <div class="entry-date">Okt 2020 – Sep 2023</div>
+            <div class="entry-title">B.Sc. Electrical Engineering & Information Technology</div>
+            <div class="entry-date">Oct 2020 – Sep 2023</div>
           </div>
-          <div class="entry-org">Technische Universität München (TUM)</div>
+          <div class="entry-org">Technical University of Munich (TUM), Germany</div>
           <div class="entry-desc">
             <ul>
-              <li><strong>Abschlussnote:</strong> 2,5</li>
-              <li><strong>Schwerpunkt:</strong> Künstliche Intelligenz und Machine Learning</li>
+              <li><strong>Final GPA:</strong> 2.5 (German scale)</li>
+              <li><strong>Specialization:</strong> Artificial Intelligence and Machine Learning</li>
             </ul>
           </div>
         </div>
       </div>
 
       <div class="section">
-        <div class="section-title">Erfahrung</div>
+        <div class="section-title">Experience</div>
         <div class="entry">
           <div class="entry-header">
-            <div class="entry-title">Wissenschaftliche Hilfskraft (HiWi)</div>
-            <div class="entry-date">Mär 2026 – heute</div>
+            <div class="entry-title">Research Assistant (HiWi)</div>
+            <div class="entry-date">Mar 2026 – Present</div>
           </div>
-          <div class="entry-org">Lehrstuhl für Computer Vision & Artificial Intelligence (CVAI), TU München</div>
+          <div class="entry-org">Chair for Computer Vision & Artificial Intelligence (CVAI), TU Munich</div>
           <div class="entry-desc">
-            Forschung zu Inference-Time Alignment von Diffusions- und Flow-Modellen in der Gruppe von Prof. Daniel Cremers. Erstautor eines
-            ECCV-2026-Papers über Trust-Region-Noise-Optimierung, auch vorgestellt beim ReALM-GEN Workshop @ ICLR 2026. Parallel zur Masterarbeit im
-            selben Lehrstuhl.
+            Research on inference-time alignment of diffusion and flow models in Prof. Daniel Cremers' group. First-author paper at the ReALM-GEN
+            Workshop @ ICLR 2026 on trust-region noise optimization. Concurrent with Master's thesis in the same group.
           </div>
         </div>
         <div class="entry">
           <div class="entry-header">
-            <div class="entry-title">Praktikum – KI in der industriellen Produktion</div>
+            <div class="entry-title">Internship – AI in Industrial Production</div>
             <div class="entry-date">2023</div>
           </div>
           <div class="entry-org">Siemens AG</div>
           <div class="entry-desc">
-            Entwicklung eines 3D-Feature-Matching-Systems mittels CNN-Embeddings zur automatisierten Bauteilsuche in Fertigungsdatenbanken.
+            Developed a 3D feature matching system using CNN embeddings to automate part retrieval in manufacturing databases, bridging deep learning
+            with industrial applications.
           </div>
         </div>
       </div>
 
       <div class="section">
-        <div class="section-title">Publikationen</div>
+        <div class="section-title">Publications</div>
         <div class="pub-item">
           <span class="pub-authors"><strong>Schweiger, N.</strong>, Ram, K., & Cremers, D. (2026).</span>
           <span class="pub-title">Trust-Region Noise Search for Black-Box Alignment of Diffusion and Flow Models.</span>
-          <span class="pub-venue">European Conference on Computer Vision (ECCV), 2026. Auch vorgestellt beim ReALM-GEN Workshop @ ICLR 2026.</span>
+          <span class="pub-venue">ReALM-GEN Workshop @ ICLR 2026, Rio de Janeiro, Brazil.</span>
         </div>
       </div>
 
       <div class="section">
-        <div class="section-title">Auszeichnungen</div>
+        <div class="section-title">Awards & Achievements</div>
         <div class="entry">
           <div class="entry-header">
-            <div class="entry-title">2. Platz – TUM.ai Makeathon (2.000 € Preisgeld)</div>
+            <div class="entry-title">2nd Place – TUM.ai Makeathon</div>
             <div class="entry-date">Apr 2023</div>
           </div>
           <div class="entry-desc">
-            Entwicklung von <em>Caire</em>, einer KI-basierten App zur Überwindung von Sprachbarrieren, die medizinische Informationen aus Sprache
-            extrahiert.
+            Built <em>Caire</em>, an app designed to overcome language barriers between nurses and patients using AI to extract medical information
+            from natural speech. Awarded a €2,000 prize.
           </div>
         </div>
       </div>
 
       <div class="section">
-        <div class="section-title">Kenntnisse & Interessen</div>
+        <div class="section-title">Skills & Interests</div>
         <dl class="grid-list">
-          <dt>Programmierung</dt>
-          <dd>Python (Sehr gut), PyTorch (Sehr gut), C/C++ (Gut), Matlab (Gut), LaTeX</dd>
-          <dt>Sprachen</dt>
-          <dd>Deutsch (Muttersprache), Englisch (C1)</dd>
-          <dt>Interessen</dt>
-          <dd>Fußball, Krafttraining & Joggen, Gitarre (seit 10 Jahren), KI & Naturwissenschaften</dd>
+          <dt>Programming</dt>
+          <dd>Python (Advanced), PyTorch (Advanced), C/C++ (Intermediate), Matlab (Intermediate), LaTeX</dd>
+          <dt>Languages</dt>
+          <dd>German (Native), English (C1 – Professional working proficiency)</dd>
+          <dt>Interests</dt>
+          <dd>Football, Strength training & running, Guitar (10+ years), AI & Natural sciences</dd>
         </dl>
       </div>
     </div>

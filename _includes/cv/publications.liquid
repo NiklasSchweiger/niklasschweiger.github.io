@@ -23,9 +23,20 @@
                 </tr>
               </tbody>
             </table>
-            {% if entry.logo %}
+            {% assign publication_logos = entry.logos | default: empty %}
+            {% if publication_logos.size > 0 or entry.logo %}
               <div class="text-center" style="padding-top: 0.5rem; width: 100%;">
-                <img src="{{ entry.logo }}" alt="logo" style="width: auto; max-width: 100px; height: 50px; object-fit: contain;">
+                {% if publication_logos.size > 0 %}
+                  {% for logo in publication_logos %}
+                    <img
+                      src="{{ logo.src }}"
+                      alt="{{ logo.alt | default: 'logo' }}"
+                      style="display: block; width: 100px; height: auto; object-fit: contain; margin: 0 auto 0.4rem;"
+                    >
+                  {% endfor %}
+                {% else %}
+                  <img src="{{ entry.logo }}" alt="logo" style="width: auto; max-width: 100px; height: 50px; object-fit: contain;">
+                {% endif %}
               </div>
             {% endif %}
           </div>
