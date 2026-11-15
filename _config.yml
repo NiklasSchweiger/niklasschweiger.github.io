@@ -9,7 +9,7 @@ last_name: Schweiger
 scholar_userid: Gxkh5r8AAAAJ
 contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Master's student at TU Munich researching machine learning, generative models, and inference-time alignment of diffusion and flow models.
+  M.Sc. graduate of TU Munich researching machine learning, generative models, and inference-time alignment of diffusion and flow models.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
