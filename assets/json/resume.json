@@ -44,8 +44,8 @@
       "icon": "fa-solid fa-industry",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Siemens-logo.svg",
       "position": "Intern – AI in Industrial Production",
-      "startDate": "2023-01-01",
-      "endDate": "2023-12-31",
+      "startDate": "2023-05-01",
+      "endDate": "2023-09-30",
       "summary": "Developed a 3D feature matching system using CNN embeddings to automate part retrieval in manufacturing databases.",
       "highlights": ["Implemented multi-view CNN pipeline for part similarity retrieval"]
     }
@@ -79,7 +79,12 @@
       "startDate": "2020-10-01",
       "endDate": "2023-09-30",
       "score": "2.5 (final, German scale)",
-      "courses": ["Artificial Intelligence and Machine Learning (from 5th semester)", "Signal Processing", "Control Systems"]
+      "courses": [
+        "Artificial Intelligence and Machine Learning (from 5th semester)",
+        "Signal Processing",
+        "Control Systems",
+        "Bachelor's thesis completed at Siemens AG"
+      ]
     },
     {
       "institution": "Chalmers University of Technology",
