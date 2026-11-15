@@ -9,7 +9,7 @@ profile:
   image: 863a9578-6ef9-4fa3-bee0-6203a62e9691.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>Research Assistant @ CVAI Lab</p>
+    <p>Former Research Assistant @ CVAI Lab</p>
     <p>Prof. Daniel Cremers' Group, TUM</p>
     <p>📧 niklas.schweiger@tum.de</p>
 
